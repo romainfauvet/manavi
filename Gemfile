@@ -46,3 +46,13 @@ end
 
 # Other gem
 gem 'slim'
+gem 'ransack'
+gem 'simple_form'
+gem 'devise'
+gem 'cancan'
+gem 'foundation-rails'
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end

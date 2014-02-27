@@ -1,18 +1,16 @@
 class Admin::CategoriesController < AdminController
   def index
-    ## @categories = Categorie.order(:title).page params[:page]
+    ## @categories = Category.order(:title).page params[:page]
 
-    @q = Categorie.search(params[:q])
+    @q = Category.search(params[:q])
     @categories = @q.result(distinct: true)
 
-    @new_categorie = Categorie.new
+    @new_category = Category.new
   end
 
   def create
-    authorize! :create, Categorie
-
-    @categorie = Categorie.new(categorie_params)
-    if @categorie.save
+    @category = Category.new(category_params)
+    if @category.save
       flash[:notice] = "Nouvelle catégorie ajoutée"
     else
       flash[:error] = "La catégorie n'a pas pu être ajouté"
@@ -22,7 +20,7 @@ class Admin::CategoriesController < AdminController
 
   private
 
-  def article_params
-    params[:categorie].permit(:name)
+  def category_params
+    params[:category].permit(:name)
   end
 end

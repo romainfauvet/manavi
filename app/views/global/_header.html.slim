@@ -1,0 +1,16 @@
+.row
+  div class="contain-to-grid"
+    nav class="top-bar" data-topbar=""
+      section class="top-bar-section"
+        ul
+          li.has-dropdown
+            = link_to '#' do
+              | Produits
+            ul class="dropdown"
+              - Category.all.each do |category|
+                li
+                  = link_to "#" do
+                    = category.name
+          li.active
+            = link_to "#" do
+              'Producteurs

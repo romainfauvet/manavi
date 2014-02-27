@@ -1,0 +1,20 @@
+section
+  h1 Admin Category
+
+table
+  thead
+    tr
+      th
+        = sort_link @q, :name, "Catégorie"
+  tbody
+    - @categories.each do |category|
+      tr
+        td
+          = category.name
+
+section
+  h1 Ajouter une nouvelle catégorie
+
+= simple_form_for [:admin, @new_category] do |f|
+  = f.input :name, label: "Catégorie"
+  = f.button :submit
