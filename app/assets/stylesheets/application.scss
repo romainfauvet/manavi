@@ -15,8 +15,8 @@
  */
 @charset "UTF-8";
 
-@import
-  "front/base/colors";
+@import "normalize";
 
-@import
-  "front/modules/header";
+@import "front/base/colors";
+
+@import "front/modules/header";

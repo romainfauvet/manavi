@@ -16,5 +16,13 @@
 //= require_tree .
 
 $(function(){
-  $(document).foundation();
+  $(document).foundation({
+    orbit: {
+      animation: 'slide',
+      timer_speed: 1000,
+      navigation_arrows: true,
+      slide_number: false,
+      bullets: true
+    }
+  });
 });
