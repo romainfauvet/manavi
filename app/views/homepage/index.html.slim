@@ -1,4 +1,31 @@
-= render partial:'global/header'
+= render 'global/header'
+
 .row
-  h1 Homepage
-= render partial:'global/footer'
+  .orbit-container
+    ul.orbit-slides-container data-orbit=""
+      li
+        img alt="slide 1" src="http://placehold.it/1000x300/A92B48/fff"
+        .orbit-caption
+          | Caption One.
+      li
+        img alt="slide 2" src="http://placehold.it/1000x300/EE964D/fff"
+        .orbit-caption
+          | Caption Two.
+      li
+        img alt="slide 3" src="http://placehold.it/1000x300/FDC43D/fff"
+        .orbit-caption
+          | Caption Three.
+        /! Navigation Arrows
+        a.orbit-prev href="#"
+          | Prev
+          span
+        a.orbit-next href="#"
+          | Next
+          span
+      /! Bullets
+      ol.orbit-bullets
+        li data-orbit-slide-number="1"
+        li.active data-orbit-slide-number="2"
+        li data-orbit-slide-number="3"
+
+= render 'global/footer'
