@@ -1,25 +1,20 @@
 .row
   .large-12.medium-12.columns
 .row
-  div class="contain-to-grid"
-    nav class="top-bar" data-topbar=""
-      section class="top-bar-section"
-        ul
-          li.has-dropdown
-            = link_to '#' do
-              | Produits
-            ul class="dropdown"
-              - Category.all.each do |category|
-                li
-                  = link_to "#" do
-                    = category.name
-          li.active
-            = link_to "#" do
-              'Producteurs
-          li.has-form.right
-            .row.collapse
-              .large-8.small-9.columns
-                input placeholder="Rechercher" type="text"
-              .large-4.small-3.columns
-                a.alert.button.expand.m-search--btn-validate-header href="#"
-                  'OK
+  nav.top-bar data-topbar=""
+    ul.title-area
+      li.name
+      li.toggle-topbar.menu-icon
+        a href="#" Menu
+    section.top-bar-section
+      ul.left
+        li.has-dropdown
+          a href="#" Produits
+          ul.dropdown
+            - Category.all.each do |category|
+              li
+                = link_to "#" do
+                  = category.name
+        li
+          = link_to "#" do
+            'Producteurs

@@ -1,20 +1,25 @@
-section
-  h1 Admin Category
-
-table
-  thead
-    tr
-      th
-        = sort_link @q, :name, "Catégorie"
-  tbody
-    - @categories.each do |category|
+.row
+  table
+    thead
       tr
-        td
-          = category.name
+        th
+          = sort_link @q, :name, "Catégorie"
+        th
+          'Supprimer
+        th
+          'Modifier
+    tbody
+      - @categories.each do |category|
+        tr
+          td
+            = category.name
+          td
+            'Delete
+          td
+            'Edit
 
-section
-  h1 Ajouter une nouvelle catégorie
+  h3 Ajouter une nouvelle catégorie
 
-= simple_form_for [:admin, @new_category] do |f|
-  = f.input :name, label: "Catégorie"
-  = f.button :submit
+  = simple_form_for [:admin, @new_category] do |f|
+    = f.input :name, label: "Catégorie"
+    = f.button :submit
