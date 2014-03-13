@@ -18,6 +18,16 @@ class Admin::CategoriesController < AdminController
     redirect_to admin_categories_path
   end
 
+  def edit
+    Category.update()
+  end
+
+  def destroy
+    @category = Category.where(id: params[:id]).first
+    @category.destroy
+    redirect_to admin_categories_path
+  end
+
   private
 
   def category_params

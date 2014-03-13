@@ -7,7 +7,7 @@ Manavi::Application.routes.draw do
   root 'homepage#index'
 
   namespace :admin do
-    resources :categories, only: [:index, :create]
+    resources :categories, only: [:index, :create, :destroy]
     root "categories#index"
   end
 

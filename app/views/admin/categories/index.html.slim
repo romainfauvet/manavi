@@ -6,17 +6,13 @@
           = sort_link @q, :name, "Catégorie"
         th
           'Supprimer
-        th
-          'Modifier
     tbody
       - @categories.each do |category|
         tr
           td
             = category.name
           td
-            'Delete
-          td
-            'Edit
+            = link_to 'Supprimer', admin_category_path(category), method: :delete
 
   h3 Ajouter une nouvelle catégorie
 
