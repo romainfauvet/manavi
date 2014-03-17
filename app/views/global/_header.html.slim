@@ -1,23 +1,48 @@
-.row
-  .large-12.medium-12.columns
-.row
-  nav.top-bar data-topbar=""
-    ul.title-area
-      li.name
-      li.toggle-topbar.menu-icon
-        a href="#" Menu
-    section.top-bar-section
-      ul.left
-        li.has-dropdown
-          a href="#" Produits
-          - Category.all.in_groups_of(20, false).each do |categories|
-            ul.dropdown
-              - categories.each do |category|
-                li
-                  a href= "#"
-                    = category.name
-        li class="divider"
-        li
-          = link_to "#" do
-            'Producteurs
-        li class="divider"
+	
+header	
+	.row.toptop
+		nav.top-bar data-topbar=""
+			section.top-bar-section
+				.logo.left
+			    	= image_tag "logo_manavi.png"
+				h1.left
+				  = image_tag "manavi.png"
+				  span 
+				  	'Ensemble pour un monde responsable
+			    
+			    ul.right.medium-9
+			      li
+			      	= link_to "#" do			           
+			          = image_tag "nav_societe.png"			          	
+			          span
+			          	'La société
+		      	  li
+				    = link_to "#" do
+					  = image_tag "nav_actu.png"						
+			          span
+			          	'L'actu
+				  li.red
+			        = link_to "#" do
+			          = image_tag "nav_compte.png"
+			          span
+			          	'Mon compte
+			      li.red
+			        = link_to "#" do
+			          = image_tag "nav_panier.png"
+			          span
+			          	'Mon panier
+	.topbot.papier
+	  nav.top-bar.row data-topbar=""
+	    section.top-bar-section
+	      ul.left
+	        li.has-dropdown
+	          a href="#" Produits
+	          - Category.all.in_groups_of(20, false).each do |categories|
+	            ul.dropdown
+	              - categories.each do |category|
+	                li
+	                  a href= "#"
+	                    = category.name
+	        li
+	          = link_to "#" do
+	            'Producteurs
