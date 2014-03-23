@@ -1,38 +1,40 @@
 @mixin font_titre {font-family: 'Comfortaa', cursive;}
 
 
-@mixin box_shaow {-moz-box-shadow: 0px 4px 15px 0px #9b9b9b;
--webkit-box-shadow: 0px 4px 15px 0px #9b9b9b;
--o-box-shadow: 0px 4px 15px 0px #9b9b9b;
-box-shadow: 0px 4px 15px 0px #9b9b9b;
+@mixin box_shaow {-moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+-o-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
 filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=180, Strength=15);}
 
 header .top-bar {height:auto; background:none;}
 
 /*NAVIGATION TOP*/
 header .toptop { background: #fff;
-  .logo {margin-left:-10px; position: fixed; z-index:5;}
+  .logo {margin-left:-10px; position: fixed; z-index:100;}
   h1 {margin:0 0 0 170px;
         span {font-size:0.30em; color:$beige_claire; display:block; @include font_titre;}
   }
-  ul {margin:10px 0; background:none;
-    li {text-align:center; width:100px; margin-left:12px; padding:2px 0; 
+  ul {margin:5px 0; background:none;width:100%;
+    li {text-align:center; /*width:100px; margin-left:12px;*/ padding:5px;
       a {padding:0!important;background:none!important;}
       span {display:block; font-size:0.9em;line-height:1.8em; @include font_titre; color:#BE272D;}    
     }
-    li.red {background:$red; 
-      span {color:#fff;}
+    li{
+      .red {background:$red; 
+        span {color:#fff;}
+      }
     }
   }
 }
 
 
 /*NAVIGATION BOTTOM*/
-header .topbot {height:38px; @include box_shaow; line-height:0px!important;
+header .topbot {@include box_shaow; line-height:0px!important;z-index:99;position:relative!important;
   .top-bar-section {
     ul{ margin-left:170px; float:left; background:none;
       li {background:none; display:inline-block;
-        a {background:none!important; font-size:1em;line-height: 2.4em;padding-left: 0px;}
+        a {background:none!important; font-size:1em;line-height: 2.4em!important;padding-left: 0px;}
       }
       .has-form{background:none; padding:0; height:auto;}
      }
@@ -45,5 +47,6 @@ header .topbot {height:38px; @include box_shaow; line-height:0px!important;
 }
 
 
-
+/*slider*/
+.orbit-bullets {float:right!important;top:0!important;}
 

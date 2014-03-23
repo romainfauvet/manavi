@@ -10,32 +10,35 @@ header
 				  span 
 				  	'Ensemble pour un monde responsable
 			    
-			    ul.right.medium-9
-			      li
-			      	a href= "#"			           
-			          = image_tag "nav_societe.png"			          	
-			          span
-			          	'La société
-		      	  li
-				    a href= "#"
-					  = image_tag "nav_actu.png"						
-			          span
-			          	'L'actu
-				  li.red
-			        a href= "#"
-			          = image_tag "nav_compte.png"
-			          span
-			          	'Mon compte
-			      li.red
-			        a href= "#"
-			          = image_tag "nav_panier.png"
-			          span
-			          	'Mon panier
+		        .nav_right.right.large-6.small-12
+				    ul.right
+				      li.large-3.medium-3.small-6.columns
+				      	a href= "#"			           
+				          = image_tag "nav_societe.png"			          	
+				          span
+				          	'La société
+			      	  li.large-3.medium-3.small-6.columns
+					    a href= "#"
+						  = image_tag "nav_actu.png"						
+				          span
+				          	'L'actu
+					  li.large-3.medium-3.small-6.columns
+					  	.red
+					        a href= "#"
+					          = image_tag "nav_compte.png"
+					          span
+					          	'Mon compte
+				      li.large-3.medium-3.small-6.columns
+				      	.red
+					        a href= "#"
+					          = image_tag "nav_panier.png"
+					          span
+					          	'Mon panier
 	.topbot.papier
 	  nav.top-bar.row data-topbar=""
 	    section.top-bar-section
 	      ul.left
-	        li.has-dropdown
+	        li.has-dropdown.large-6.medium-6.small-12.columns
 	          a href="#" Produits
 	          - Category.all.in_groups_of(20, false).each do |categories|
 	            ul.dropdown
@@ -43,6 +46,6 @@ header
 	                li
 	                  a href= "#"
 	                    = category.name
-	        li
+	        li.large-6.medium-6.small-12.columns
 	          a href= "#"
 	            'Producteurs

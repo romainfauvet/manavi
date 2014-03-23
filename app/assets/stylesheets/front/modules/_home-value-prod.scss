@@ -1,0 +1,24 @@
+.panel {padding:10px !important; margin-bottom:0;}
+.home-value{ margin-bottom:30px;
+  h3 {color:$red !important; border-bottom:solid 1px $red; padding-bottom:5px; @include font_titre;}
+  .baseline {color:$red !important; text-align:center;font-size:1.2em;}
+  ul { padding:0; margin:0;
+    li {list-style:none; padding:0; margin:0;clear:both;
+       p {color:$gris;font-size:0.8em;float:left;}
+        img {float:left;margin-right:10px;}
+    }
+  }
+  a {float:right; background:$beige_fonce;color:$blanc;padding:5px 8px;font-size:0.8em;@include font_titre;}
+}
+
+
+.home-prod {margin-bottom:30px;
+   h3 {color:$red !important; border-bottom:solid 1px $red; padding-bottom:5px; @include font_titre;}
+   h4 {@include font_titre;}
+   img {float:left; margin:0 10px 10px 0;}
+   p {font-size:0.8em;color:$gris}
+   a {float:right; background:$beige_fonce;color:$blanc;padding:5px 8px;font-size:0.8em;@include font_titre;}
+}
+
+.prod_logo {background:image-url('bg_home_producteur.png') top left no-repeat;}
+.value_logo {background:image-url('bg_home_valeur.png') top right no-repeat;}
