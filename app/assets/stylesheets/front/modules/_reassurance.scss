@@ -1,4 +1,4 @@
-.rassurance {padding:10px 0; margin-bottom:30px;
-  .border-dashed{border-top:dashed 1px $red;border-bottom:dashed 1px $red;padding:5px 0;}
-  li{list-style:none;text-align:center; margin:5px 0;}
+.rassurance {padding-top:10px; margin-bottom:30px; background:image-url('border_dashed.png') repeat-x top;
+  .border-dashed{background:image-url('border_dashed.png') repeat-x bottom; padding-bottom:10px;}
+  li{list-style:none;text-align:center;}
 }

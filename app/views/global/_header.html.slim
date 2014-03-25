@@ -3,8 +3,8 @@ header
 	.row.toptop
 		nav.top-bar data-topbar=""
 			section.top-bar-section
-				.logo.left
-			    	= image_tag "logo_manavi.png"
+				.logo.left.show-for-large-up
+			    	= image_tag "logo_manavi.jpg"
 				h1.left
 				  = image_tag "manavi.png"
 				  span 
@@ -13,22 +13,24 @@ header
 		        .nav_right.right.large-6.small-12
 				    ul.right
 				      li.large-3.medium-3.small-6.columns
-				      	a href= "#"			           
-				          = image_tag "nav_societe.png"			          	
-				          span
-				          	'La société
+				      	.blanc
+					      	a href= "#"			           
+					          = image_tag "nav_societe.png"			          	
+					          span
+					          	'La société
 			      	  li.large-3.medium-3.small-6.columns
-					    a href= "#"
-						  = image_tag "nav_actu.png"						
-				          span
-				          	'L'actu
-					  li.large-3.medium-3.small-6.columns
+			      	  	.blanc
+						    a href= "#"
+							  = image_tag "nav_actu.png"						
+					          span
+					          	'L'actu
+					  li.large-3.medium-3.small-6.columns.red
 					  	.red
 					        a href= "#"
 					          = image_tag "nav_compte.png"
 					          span
 					          	'Mon compte
-				      li.large-3.medium-3.small-6.columns
+				      li.large-3.medium-3.small-6.columns.red
 				      	.red
 					        a href= "#"
 					          = image_tag "nav_panier.png"
@@ -38,14 +40,22 @@ header
 	  nav.top-bar.row data-topbar=""
 	    section.top-bar-section
 	      ul.left
-	        li.has-dropdown.large-6.medium-6.small-12.columns
-	          a href="#" Produits
+	      	li.logo
+	      		a href= "#"
+	      			= image_tag "logo_manavi_hori.png"
+	        li.has-dropdown
+	          a href="#" Les produits
 	          - Category.all.in_groups_of(20, false).each do |categories|
 	            ul.dropdown
 	              - categories.each do |category|
 	                li
 	                  a href= "#"
 	                    = category.name
-	        li.large-6.medium-6.small-12.columns
+	        li
 	          a href= "#"
-	            'Producteurs
+	            'Les producteurs
+	            
+	      .recherche.right.large-3.small-12      
+		      form 
+				input.left.champs type="text" name="fname" value="Rechercher"
+		   		input.left.bouton type="submit" value="OK" 
