@@ -1,58 +1,68 @@
 .row.homepage-list
 	.titreh2
 		.fondblanc
-			h2.text-center Notre sélection
-	
+			h2.text-center
+				'Notre sélection
+
 	ul.list
 		li.large-3.medium-3.small-6.columns
 			.label
 				= image_tag "label-limite.png"
-			.list-img	
+			.list-img
 				= image_tag "produit-1.jpg"
 			.desc-prix
 				.desc.large-8.medium-8.small-12.left
-					span Radio solaire Scorpion
-					span orange ETON
+					span
+						'Radio solaire Scorpion
+					span
+						'orange ETON
 				.prix.large-4.medium-4.small-12.right
-					span 59€95
+					span
+						'59€95
 				.clear
 			.voirproduit
-				a href= "#"
+				= link_to '#' do
 					'Voir le produit
-			
-					
+
+
 		li.large-3.medium-3.small-6.columns
 			.label
-			
-			.list-img	
+
+			.list-img
 				= image_tag "produit-2.jpg"
 			.desc-prix
 				.desc.large-8.medium-8.small-12.left
-					span Radio solaire Scorpion
-					span orange ETON
+					span
+						'Radio solaire Scorpion
+					span
+						'orange ETON
 				.prix.large-4.medium-4.small-12.right
-					span 59€95
+					span
+						'59€95
 				.clear
 			.voirproduit
-				a href= "#"
+				= link_to '#' do
 					'Voir le produit
-					
+
 		li.large-3.medium-3.small-6.columns
 			.label
-			
-			.list-img	
+
+			.list-img
 				= image_tag "produit-3.jpg"
 			.desc-prix
 				.desc.large-8.medium-8.small-12.left
-					span Radio solaire Scorpion
-					span orange ETON
+					span
+						'Radio solaire Scorpion
+					span
+						'orange ETON
 				.prix.large-4.medium-4.small-12.right
-					span 59€95
+					span
+						'59€95
 				.clear
 			.voirproduit
-				a href= "#"
+				= link_to '#' do
 					'Voir le produit
-					
+
 		li.large-3.medium-3.small-6.columns
 			.label
 				= image_tag "label-fin-stock.png"
@@ -60,15 +70,18 @@
 				= image_tag "produit-3.jpg"
 			.desc-prix
 				.desc.large-8.medium-8.small-12.left
-					span Radio solaire Scorpion
-					span orange ETON
+					span
+						'Radio solaire Scorpion
+					span
+						'orange ETON
 				.prix.large-4.medium-4.small-12.right
-					span 59€95
+					span
+						'59€95
 				.clear
 			.voirproduit
-				a href= "#"
+				= link_to '#' do
 					'Voir le produit
 		.clear
-	
-	a.list-lien href= "#"
-		'Découvrir tous les produits 
+
+	= link_to '#', class: 'list-lien' do
+		'Découvrir tous les produits
