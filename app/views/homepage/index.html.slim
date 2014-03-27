@@ -1,19 +1,13 @@
 = render 'global/header'
 
-.row
-  .orbit-container
-    ul data-orbit=""
-      li
-        img alt="slide 1" src="http://placehold.it/1000x300/A92B48/fff"
-      li
-        img alt="slide 2" src="http://placehold.it/1000x300/EE964D/fff"
-      li
-        img alt="slide 3" src="http://placehold.it/1000x300/FDC43D/fff"
+= render 'homepage/slider'
 = render 'homepage/selection'
 = render 'homepage/news_products'
+
 .row
   = render 'homepage/values'
   = render 'homepage/producers'
 = render 'homepage/news'
-
+= render 'global/newsletter_reseaux'
+= render 'global/reassurance'
 = render 'global/footer'
