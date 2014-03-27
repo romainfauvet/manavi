@@ -2,10 +2,8 @@
   table
     thead
       tr
-        th
+        th colspan="2" class="text-center"
           = sort_link @q, :name, "Catégorie"
-        th
-          'Supprimer
     tbody
       - @categories.each do |category|
         tr
@@ -18,4 +16,4 @@
 
   = simple_form_for [:admin, @new_category] do |f|
     = f.input :name, label: "Catégorie"
-    = f.button :submit
+    = f.button :submit, value: "Créer une catégorie"
