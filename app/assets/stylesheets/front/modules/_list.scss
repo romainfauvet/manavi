@@ -4,7 +4,7 @@
 
 .titreh2 {background:image-url('bg_h2.gif') center repeat-x;
   .fondblanc { text-align:center;
-    h2 {display:inline; margin:auto; background:#fff; padding:0 10px;color:$beige_fonce ;@include font_titre;text-transform:uppercase;}    
+    h2 {display:inline; margin:auto; background:#fff; padding:0 10px;color:$brown;@include font_titre;text-transform:uppercase;}    
   } 
 }
 
@@ -17,13 +17,10 @@ ul.list { padding:0; margin:0;
     .desc-prix {
       span { display:block;font-size:0.8em;}
       .prix {
-        span { color:$beige_fonce; font-size:1.3em; text-align:right;}
+        span { color:$brown; font-size:1.3em; text-align:right;}
       }
     }   
-    .voirproduit { background:$red;padding:3px 0;margin-top:5px;
-      a {color:$blanc; display:block;text-align:center;text-transform:uppercase;font-size:0.8em;}
-    } 
   }
 }
 
-.list-lien { text-align:right; font-size:0.8em;color:$beige_fonce; text-decoration:underline;display:block;}
+.list-lien { text-align:right; font-size:0.8em;color:$brown; text-decoration:underline;display:block;}

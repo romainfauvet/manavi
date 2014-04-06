@@ -1,9 +1,9 @@
 .newsletter_reseaux {margin-bottom:30px; margin-left:30px;
   .newsletter {
     .champs {width:80%!important; margin-bottom:0;}
-    .bouton {width:20%!important; height:100%; background:$red; color:$blanc;border:none;position: absolute;}
+    .bouton {width:20%!important; height:100%; background:$red; color:$white;border:none;position: absolute;}
   }
-  .reseaux {
+  .reseaux {float:right;
     p {margin:0;line-height: 2.6em;font-size:0.9em;margin-right:10px;}
     ul { margin:0;
       li {list-style:none; display:inline-block; margin:3px;}
