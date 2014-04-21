@@ -1,4 +1,4 @@
 class ListproductController < ApplicationController
-  def index
+  def listproduct
   end
 end

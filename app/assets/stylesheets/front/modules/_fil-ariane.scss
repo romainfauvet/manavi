@@ -1,0 +1,27 @@
+.fil_ariane { 
+  margin-top:10px; 
+  margin-bottom:20px;
+  ul {
+    margin:0;
+    li {
+      list-style:none;
+      display:inline-block;
+      a {
+        color:$grey;
+        text-decoration:underline;
+      }
+    }
+    .current {
+      color:$beige;
+    }
+    .current:before {
+      content: ">";
+      color:$grey;
+      margin: 0 0.75rem;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+
+
