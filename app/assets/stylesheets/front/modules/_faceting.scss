@@ -3,7 +3,8 @@
     a{
       color:$beige; 
       background:none;
-      padding: 2px 5px;
+      padding:0px;
+      font-size:1.4em;
     }
     .content{
       padding:10px 0;
@@ -23,5 +24,17 @@
         cursor:pointer;
       }
     }
+  }
+}
+.accordion {
+  dd a:hover {
+    background:none!important; 
+    color:$red;  
+  }
+  dd.active a {
+  background:none!important; 
+  border-bottom:solid 1px $red;
+  color:$red;
+  
   }
 }

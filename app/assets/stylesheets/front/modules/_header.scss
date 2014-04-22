@@ -1,5 +1,5 @@
 
-body {font-size:0.9em; color:$grey!important;}
+body {font-size:0.9em; color:$grey!important; height:auto!important;}
 ul, ol, dl {font-size:0.9em;}
 
 @mixin font_titre {font-family: 'Comfortaa', cursive;}
@@ -35,7 +35,7 @@ header .toptop { background: #fff;
 
 
 /*NAVIGATION BOTTOM*/
-header .topbot {@include box_shaow; line-height:0px!important;
+header .topbot {@include box_shaow; line-height:0px!important; margin-bottom:15px;
   .logo a { padding:0!important;@include font_titre;
     img { width:85%;margin-bottom:2px;}
   }
@@ -62,7 +62,6 @@ header .topbot {@include box_shaow; line-height:0px!important;
 [data-magellan-expedition] {padding:0;}
 
 /*slider*/
-.orbit-container { margin-top:15px;}
 .orbit-bullets {float:right!important;top:0!important; margin-bottom:15px!important;}
 
 

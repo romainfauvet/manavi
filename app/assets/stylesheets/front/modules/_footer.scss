@@ -1,7 +1,7 @@
 .papier {background:image-url('bg_papier.png');}
 
 
-footer {
+footer { margin-top: 30px;
   .footer-top { background:$brown; padding:5px 0;
     span {color:$white;text-align:center;display:block;font-size:1.3em; }    
   }
