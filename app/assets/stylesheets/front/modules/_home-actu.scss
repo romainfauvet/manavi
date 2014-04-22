@@ -1,0 +1,48 @@
+#home-actu {
+  .panel {
+    margin:0px 15px 30px 15px;
+    background:$gris_clair;
+    padding:10px 0!important;
+  }
+  h3 {
+    color:$gris !important;
+    border-bottom:solid 1px $gris;
+    padding-bottom:5px;
+    @include font_titre;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  ul {
+    margin:0;
+    padding:0;
+    .columns {
+      padding:0 10px;
+    }
+    li {
+      list-style:none;
+      .actu {
+        background:$blanc;
+        padding:10px;
+        h4 {
+          color:$beige_fonce;
+        }
+        .date {
+          font-size:0.6em;
+          color:$gris;
+          display:block;
+        }
+        img {
+          float:left;
+          margin:10px 10px 10px 0;
+        }
+        a {
+          float:right;
+          background:$beige_claire;
+          color:$blanc;
+          padding:5px 8px;
+          font-size:0.8em;
+          @include font_titre;}
+      }
+    }
+  }
+}
