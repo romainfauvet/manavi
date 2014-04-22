@@ -1,9 +1,8 @@
 class Admin::CategoriesController < AdminController
   def index
-    ## @categories = Category.order(:title).page params[:page]
+    @categories = Category.where(parent_id: nil).order(:name)
 
-    @q = Category.search(params[:q])
-    @categories = @q.result(distinct: true)
+
 
     @new_category = Category.new
   end
@@ -31,6 +30,6 @@ class Admin::CategoriesController < AdminController
   private
 
   def category_params
-    params[:category].permit(:name)
+    params.require(:category).permit(:name, :parent_id)
   end
 end

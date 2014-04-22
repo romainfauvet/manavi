@@ -1,19 +1,21 @@
 .row
-  table
-    thead
-      tr
-        th colspan="2" class="text-center"
-          = sort_link @q, :name, "Catégorie"
-    tbody
-      - @categories.each do |category|
-        tr
-          td
-            = category.name
-          td
-            = link_to 'Supprimer', admin_category_path(category), method: :delete
+  h3 Catégorie
+  ul
+    - @categories.each do |category|
+      li
+        = category.name
+        =' link_to 'Supprimer', admin_category_path(category), method: :delete
+        ul
+          - category.children.each do |child|
+            li
+              = child.name
+              =' link_to 'Supprimer', admin_category_path(category), method: :delete
+
+
 
   h3 Ajouter une nouvelle catégorie
 
   = simple_form_for [:admin, @new_category] do |f|
-    = f.input :name, label: "Catégorie"
+    = f.input :name, label: "Nom"
+    = f.association :parent, collection: Category.all, label: "Catégorie"
     = f.button :submit, value: "Créer une catégorie"

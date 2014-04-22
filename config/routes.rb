@@ -6,9 +6,13 @@ Manavi::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'homepage#index'
 
+  resources :pages, only: :show
+  get '/pages/*categories/:id', to: 'pages#show'
+
   namespace :admin do
-    resources :categories, only: [:index, :create, :destroy]
-    root "categories#index"
+    root "dashboard#index"
+    resource :dashboard, only: :index
+    resources :categories, only: [:index, :new, :create, :destroy]
   end
 
   # Example of regular route:

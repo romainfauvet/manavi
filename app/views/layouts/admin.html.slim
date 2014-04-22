@@ -7,7 +7,9 @@ html lang="fr" class="no-js"
     = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
   body
-    = render 'global/header'
+    h1 Admin
+
+    = link_to 'Catégories', admin_categories_path
     = yield
-    = render 'global/footer'
+
     = javascript_include_tag "application"
