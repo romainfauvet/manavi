@@ -10,6 +10,11 @@
             li
               = child.name
               =' link_to 'Supprimer', admin_category_path(category), method: :delete
+              ul
+                - child.children.each do |child|
+                  li
+                    = child.name
+                    =' link_to 'Supprimer', admin_category_path(category), method: :delete
 
 
 

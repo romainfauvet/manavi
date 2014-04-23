@@ -45,13 +45,25 @@ header
 	      		a href="/"
 	      			= image_tag "logo_manavi_hori.png"
 	        li.has-dropdown
-	          a href="#" Les produits
-	          - Category.all.in_groups_of(20, false).each do |categories|
-	            ul.dropdown
-	              - categories.each do |category|
-	                li
-	                  a href= "#"
-	                    = category.name
+					  a href="#" Les produits
+					  - Category.where(parent_id: nil).in_groups_of(20, false).each do |categories|
+					    ul.dropdown
+					      - categories.each do |category|
+					        li.has-dropdown
+					          a href= "#"
+					            = category.name
+					          - category.children.in_groups_of(20, false).each do |children|
+					            ul.dropdown
+					              - children.each do |child|
+					                li.has-dropdown
+					                  a href= "#"
+					                    = child.name
+					                  - child.children.in_groups_of(20, false).each do |children|
+					                  	ul.dropdown
+									          	  - children.each do |child|
+									          	    li
+									          	      a href= "#"
+									          	        = child.name
 	        li
 	          a href= "#"
 	            'Les producteurs

@@ -2,8 +2,6 @@ class Admin::CategoriesController < AdminController
   def index
     @categories = Category.where(parent_id: nil).order(:name)
 
-
-
     @new_category = Category.new
   end
 
