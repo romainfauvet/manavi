@@ -8,11 +8,13 @@ Manavi::Application.routes.draw do
 
   resources :pages, only: :show
   get '/pages/*categories/:id', to: 'pages#show'
+  get '/pages/*actus/:id', to: 'pages#show'
   get 'listproduct/listproduct' => 'listproduct#listproduct'
 
   namespace :admin do
     root "dashboard#index"
     resource :dashboard, only: :index
+    resources :actus, only: [:index, :new, :create, :destroy]
     resources :categories, only: [:index, :new, :create, :destroy]
   end
 

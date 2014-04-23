@@ -1,0 +1,23 @@
+.row
+  h3 Actus
+  ul
+    - @actus.each do |actu|
+      .panel
+        li
+          'Titre
+          br
+          = actu.name
+          / =' link_to 'Supprimer', admin_actu_path(actu), method: :delete
+        li
+          'Description
+          br
+          = actu.description
+        =' link_to 'Supprimer', admin_actu_path(actu), method: :delete
+
+
+  h3 Ajouter une nouvelle actulité
+
+  = simple_form_for [:admin, @new_actu] do |f|
+    = f.input :name, label: "Title"
+    = f.input :description, as: :text, label: "Description"
+    = f.button :submit, value: "Créer une actualité"

@@ -2,9 +2,10 @@ class PagesController < ApplicationController
 
   def show
     categories    = params[:categories] || ''
+    actus          = params[:actus] || ''
     page          = params[:id]
 
-    template      = File.join(controller_path, categories, page)
+    template      = File.join(controller_path, categories, actus, page)
     template_path = File.join(view_paths.first, "#{template}.html.slim")
 
     if File.exists?(template_path)
