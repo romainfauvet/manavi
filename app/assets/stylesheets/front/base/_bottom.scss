@@ -1,0 +1,64 @@
+/* padding standard */
+$padding: 5px;
+$padding-medium: ($padding*2);
+$padding-big: ($padding-medium*2);
+
+
+/* transitions */
+@mixin transition {
+-webkit-transition: background .2s ease-in;
+-moz-transition: background .2 ease-in;
+-o-transition: background .2s ease-in;
+transition: background .2s ease-in;
+}
+
+
+/* bouton standard */
+.button { margin-top:5px; margin-bottom:0; width:100%; text-align: center; padding: $padding; @include transition; 
+  a { color:  #fff; text-decoration: none; font-family: comfortaa; display: block; }
+}
+
+
+/* Gros bouton */
+.big-button { padding: $padding-big;
+  a { display: block;}
+}
+
+
+/* Voir le produit */
+.accessproduct { background-color: $red;
+  a { text-transform: uppercase; }  
+}
+
+.accessproduct:hover { background-color: $upred; @include transition; }
+
+
+/* Voir tous les producteurs */
+.seeall { background: $brown; @include transition; float:right; padding:5px 10px;right:10px; bottom:10px; width:auto;
+  a {font-size:0.8em;}
+}
+
+.seeall:hover { background: $upbrown; @include transition; }
+
+
+@media #{$large-up} {
+  .seeall{position:absolute;}
+}
+
+/* Voir tous les produits */
+.allselection { background: url('bullet.gif') center left no-repeat ; padding-left: 12px; float: right;margin-right:10px;
+  a { color: $brown; text-decoration: underline; font-size:0.8em;}
+  a:hover { color: $upbrown;  @include transition; }
+}
+
+
+/* Lire la suite */
+.read { background: $beige; @include transition; float:right; width:auto; padding:5px 10px;}
+
+.read:hover { background: $downbeige;}
+
+
+/* Ajouter au panier */
+.addtocard { background: $red; @include transition; }
+
+.addtocard:hover { background: $downred; @include transition;}

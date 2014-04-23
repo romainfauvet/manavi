@@ -1,0 +1,40 @@
+.faceting {
+  dd {
+    a{
+      color:$beige; 
+      background:none;
+      padding:0px;
+      font-size:1.4em;
+    }
+    .content{
+      padding:10px 0;
+    }
+  }
+    
+  ul {
+    padding:0;
+    margin:0;
+    li {
+      color:$grey; 
+      list-style:none;
+      input{
+        top: 3px;
+        position: relative;
+        margin-right:5px;
+        cursor:pointer;
+      }
+    }
+  }
+}
+.accordion {
+  dd a:hover {
+    background:none!important; 
+    color:$red;  
+  }
+  dd.active a {
+  background:none!important; 
+  border-bottom:solid 1px $red;
+  color:$red;
+  
+  }
+}

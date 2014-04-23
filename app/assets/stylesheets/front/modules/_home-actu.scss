@@ -1,12 +1,12 @@
 #home-actu {
   .panel {
     margin:0px 15px 30px 15px;
-    background:$gris_clair;
+    background:$grey_light;
     padding:10px 0!important;
   }
   h3 {
-    color:$gris !important;
-    border-bottom:solid 1px $gris;
+    color:$white !important;
+    border-bottom:solid 1px $white;
     padding-bottom:5px;
     @include font_titre;
     margin-left:10px;
@@ -21,14 +21,14 @@
     li {
       list-style:none;
       .actu {
-        background:$blanc;
+        background:$white;
         padding:10px;
         h4 {
-          color:$beige_fonce;
+          color:$brown;
         }
         .date {
           font-size:0.6em;
-          color:$gris;
+          color:$grey;
           display:block;
         }
         img {
@@ -37,8 +37,8 @@
         }
         a {
           float:right;
-          background:$beige_claire;
-          color:$blanc;
+          background:$beige;
+          color:$white;
           padding:5px 8px;
           font-size:0.8em;
           @include font_titre;}

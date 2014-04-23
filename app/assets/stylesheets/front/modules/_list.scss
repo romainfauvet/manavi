@@ -15,12 +15,11 @@
       margin:auto;
       background:#fff;
       padding:0 10px;
-      color:$beige_fonce ;
+      color:$brown ;
       @include font_titre;
       text-transform:uppercase;
     }
   }
-}
 
 ul.list {
   padding:0;
@@ -42,28 +41,9 @@ ul.list {
       }
     }
     .desc-prix {
-      span {
-        display:block;
-        font-size:0.8em;
-      }
+      h3 { display:block; font-size:1.2em!important; text-align:left;}
       .prix {
-        span {
-          color:$beige_fonce;
-          font-size:1.3em;
-          text-align:right;
-        }
-      }
-    }
-    .voirproduit {
-      background:$red;
-      padding:3px 0;
-      margin-top:5px;
-      a {
-        color:$blanc;
-        display:block;
-        text-align:center;
-        text-transform:uppercase;
-        font-size:0.8em;
+        span { color:$brown; font-size:2em; text-align:right;}
       }
     }
   }
@@ -72,7 +52,7 @@ ul.list {
 .list-lien {
   text-align:right;
   font-size:0.8em;
-  color:$beige_fonce;
+  color:$brown;
   text-decoration:underline;
   display:block;
 }

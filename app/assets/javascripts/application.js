@@ -14,6 +14,9 @@
 //= require jquery_ujs
 //= require foundation
 //= require_tree .
+//= require switchviewproduct/cbpViewModeSwitch.js
+//= require switchviewproduct/classie.js
+//= require switchviewproduct/modernizr.custom.js
 
 $(function(){
   $(document).foundation({

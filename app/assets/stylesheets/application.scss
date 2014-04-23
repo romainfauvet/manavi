@@ -4,7 +4,8 @@
 
 @import
   "front/base/foundation_settings",
-  "front/base/colors";
+  "front/base/colors",
+  "front/base/bottom";
 
 @import
   "front/modules/header",
@@ -15,3 +16,7 @@
 @import "front/modules/home-actu";
 @import "front/modules/reassurance";
 @import "front/modules/newsletter-reseaux";
+@import "front/modules/fil-ariane";
+@import "front/modules/faceting";
+@import "front/modules/switchviewproduct";
+@import "front/modules/font_ico";

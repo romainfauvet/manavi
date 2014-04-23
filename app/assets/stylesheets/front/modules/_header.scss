@@ -1,3 +1,7 @@
+
+body {font-size:0.9em; color:$grey!important; height:auto!important;}
+ul, ol, dl {font-size:0.9em;}
+
 @mixin font_titre {font-family: 'Comfortaa', cursive;}
 
 
@@ -13,8 +17,9 @@ header {z-index:99;position:relative;}
 /*NAVIGATION TOP*/
 header .toptop { background: #fff;
   .logo {position:absolute; @include box_shaow; z-index:2;}
-  h1 {margin:0 0 0 170px;
-        span {font-size:0.30em; color:$beige_claire; display:block; @include font_titre;}
+  h1 {margin:0;
+    img {margin-left:5px;}
+    span {font-size:0.27em; color:$beige_claire; display:block; @include font_titre;margin-left:5px;}
   }
   ul {margin:5px 0; background:none;width:100%;
     li {text-align:center; /*width:100px; margin-left:12px;*/ padding:0 5px;
@@ -30,7 +35,7 @@ header .toptop { background: #fff;
 
 
 /*NAVIGATION BOTTOM*/
-header .topbot {@include box_shaow; line-height:0px!important;
+header .topbot {@include box_shaow; line-height:0px!important; margin-bottom:15px;
   .logo a { padding:0!important;@include font_titre;
     img { width:85%;margin-bottom:2px;}
   }
@@ -49,7 +54,7 @@ header .topbot {@include box_shaow; line-height:0px!important;
   
   .recherche {
     .champs {width:85%!important; margin-bottom:0;}
-    .bouton {background:$red; color:$blanc;border:none;position: absolute;}
+    .bouton {background:$red; color:$white; border:none;position: absolute;}
   }
 }
 
@@ -57,6 +62,9 @@ header .topbot {@include box_shaow; line-height:0px!important;
 [data-magellan-expedition] {padding:0;}
 
 /*slider*/
-.orbit-container { margin-top:15px;}
 .orbit-bullets {float:right!important;top:0!important; margin-bottom:15px!important;}
 
+
+@media #{$large-up} {
+  header .toptop h1{margin-left:170px;}
+}
