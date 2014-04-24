@@ -27,7 +27,7 @@ transition: background .2s ease-in;
 
 /* Voir le produit */
 .accessproduct { background-color: $red;
-  a { text-transform: uppercase; }  
+  a { text-transform: uppercase!important; }  
 }
 
 .accessproduct:hover { background-color: $upred; @include transition; }
