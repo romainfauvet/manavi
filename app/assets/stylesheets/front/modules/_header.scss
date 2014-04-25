@@ -2,7 +2,7 @@
 body {font-size:0.9em; color:$grey!important; height:auto!important; background:#F7F7F7;}
 ul, ol, dl {font-size:0.9em;}
 
-@mixin font_titre {font-family: 'Comfortaa', cursive;}
+@mixin font_titre {font-family: 'Quando', 'serif';}
 
 
 @mixin box_shaow {-moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
@@ -48,7 +48,7 @@ header .topbot {@include box_shaow; line-height:0px!important; margin-bottom:15p
   .top-bar-section {
     ul{ float:left; background:none;
       li {background:none; display:inline-block;
-        a {background:none!important; font-size:1em;line-height: 2.4em!important;padding-left: 0px;}
+        a {background:none!important; @include font_titre; font-size:1em;line-height: 2.5em!important;padding-left: 0px;}
       }
       .has-form{background:none; padding:0; height:auto;}
      }
@@ -68,9 +68,19 @@ header .topbot {@include box_shaow; line-height:0px!important; margin-bottom:15p
 [data-magellan-expedition] {padding:0;}
 
 /*slider*/
-.orbit-bullets {float:right!important;top:0!important; margin-bottom:15px!important;}
+.orbit-container {
+  margin-top:10px;
+  margin-bottom:20px;
+  .orbit-bullets {
+    float:right!important;
+    top:0!important;
+     margin-bottom:15px!important;
+   }
+}
+
 
 
 @media #{$large-up} {
   header .toptop h1{margin-left:170px;}
+  header .top-bar-section ul li a {font-size:1em; line-height:2.4em;}
 }

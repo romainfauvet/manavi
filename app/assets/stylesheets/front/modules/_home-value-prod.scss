@@ -1,19 +1,19 @@
 
 .home-value{ margin-bottom:30px; 
-  .panel {padding:10px !important; margin-bottom:0;position:relative;  background:$beige_light!important;min-height: 315px;}
+  .panel {padding:10px !important; margin-bottom:0;position:relative;background:$grey_light!important;@include box_shaow_light;}
   h3 {color:$red !important; border-bottom:solid 1px $red; padding-bottom:5px; @include font_titre;}
-  .baseline {color:$brown_dark !important; text-align:center;font-size:1.2em;}
   ul { padding:0; margin:0;
     li {list-style:none; padding:0; margin:0;clear:both;
-       p {color:$brown_dark;font-size:0.8em;float:left;}
-        img {float:left;margin-right:10px;}
+      p {color:$brown_dark;font-size:1em;}
+      img {float:left;margin-right:10px;}
+      h4 {font-size:1.4em; margin:0;}
     }
   }
 }
 
 
 .home-prod {margin-bottom:30px; 
-   .panel {padding:10px !important; margin-bottom:0;position:relative; background:$beige_light!important;min-height: 315px;}
+   .panel {padding:10px !important; margin-bottom:0;position:relative;background:$brown!important;@include box_shaow_light;}
    h3 {color:$red !important; border-bottom:solid 1px $red; padding-bottom:5px; @include font_titre;}
    h4 {@include font_titre;color:$brown_dark}
    img {float:left; margin:0 10px 10px 0;}
