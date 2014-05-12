@@ -1,11 +1,30 @@
-.clear{clear:both}
 
-.homepage-list {margin-bottom:30px;}
 
-.titreh2 {background:image-url('bg_h2.gif') center repeat-x;
-  .fondblanc { text-align:center;
-    h2 {display:inline; margin:auto; background:#F7F7F7; padding:0 10px;color:$brown;@include font_titre;text-transform:uppercase;}    
+.homepage-list {
+  margin-bottom:30px;
+}
+
+.titreh2 {
+  background:image-url('bg_h2.gif') center repeat-x;
+  margin-bottom:10px;
+  .fondblanc { 
+    text-align:center;
+    h2 {
+      display:inline; 
+      margin:auto;
+      font-size:2em;
+      background:#F7F7F7;
+      padding:0 10px;
+      color:$red;
+      @include font_titre;
+    }    
   } 
 }
 
-.list-lien { text-align:right; font-size:0.8em;color:$brown; text-decoration:underline;display:block;}
+.list-lien { 
+  text-align:right; 
+  font-size:0.8em;
+  color:$brown; 
+  text-decoration:underline;
+  display:block;
+}

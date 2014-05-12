@@ -1,0 +1,101 @@
+#name_ref {
+  h1 {
+    color:$red;
+    font-size:30px;
+    @include font_titre;
+  }
+  .ref span {
+    display:block;
+  }
+  .producteur {
+    margin-top:10px;
+    p {
+      display:block;
+      color:$grey;
+      margin-bottom:5px;
+    }
+    .nom {
+      background:$red;
+      padding:2px 4px;
+      color:$white;
+      text-transform:uppercase;
+    }
+  }
+}
+
+#addcard {
+  .panel {
+    background:$white;
+    padding:10px;
+    span {
+      font-size:10px;
+    }
+    table {
+      border:none;
+      width:100%;
+      margin-bottom:0;
+      tr{
+        background:none;
+        td{
+          padding:0;
+          .alignright{
+            text-align:right;
+            font-weight:bold;
+            font-size:1.3em;
+            span {
+              font-size:0.8em;
+              font-weight:normal;
+            }
+          }
+        }
+      }
+    }
+    .addcartpanel {
+      background:$red;
+      padding:15px 0;
+      margin-bottom:5px;
+      a{
+        text-align:center;
+        color:$white;
+        margin:0;
+        font-size:1.3em;
+        display:block;
+      }      
+    }
+    .addfavoritepanel {
+      background:$brown;
+      padding:5px 0;
+      a {
+        text-align:center;
+        color:$white;
+        margin:0;
+        font-size:0.8em;
+        display:block;
+      }      
+    }
+  }
+}
+
+
+#caracteristique {
+  margin-top:20px;
+  table {
+    width:100%;
+    th {
+      text-align:left;
+      color:$red;
+      @include font_titre;
+      font-size:1.2em;
+    }
+  }
+}
+
+#description {
+  margin-top:20px;
+  h2 {
+    color:$red;
+    @include font_titre;
+    font-size:1.2em;
+    font-weight:bold;
+  }
+}

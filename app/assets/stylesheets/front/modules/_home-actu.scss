@@ -3,10 +3,10 @@
     margin:0px 15px 30px 15px;
     background:$grey_light;
     padding:10px 0!important;
+    @include box_shaow_light;
   }
   h3 {
-    color:$white !important;
-    border-bottom:solid 1px $white;
+    color:$grey !important;
     padding-bottom:5px;
     @include font_titre;
     margin-left:10px;
@@ -23,11 +23,12 @@
       .actu {
         background:$white;
         padding:10px;
+        position:relative;
         h4 {
           color:$brown;
         }
         .date {
-          font-size:0.6em;
+          font-size:0.8em;
           color:$grey;
           display:block;
         }
@@ -36,12 +37,13 @@
           margin:10px 10px 10px 0;
         }
         a {
-          float:right;
-          background:$beige;
           color:$white;
           padding:5px 8px;
           font-size:0.8em;
           @include font_titre;}
+      }
+      .padding {
+        padding-bottom:10px;
       }
     }
   }

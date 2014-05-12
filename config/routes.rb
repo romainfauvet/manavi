@@ -6,7 +6,8 @@ Manavi::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'homepage#index'
   get 'listproduct/listproduct' => 'listproduct#listproduct'
-  
+  get 'product/pageproduct' => 'product#pageproduct'
+ 
   namespace :admin do
     resources :categories, only: [:index, :create, :destroy]
     root "categories#index"
