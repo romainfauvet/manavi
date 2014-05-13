@@ -1,3 +1,8 @@
+
+.card_ref_desc {
+  float:right;
+}
+
 #ref_producteur {
   margin-top:20px;
   .ref span{
@@ -17,6 +22,21 @@
     }
     span {
       font-size:10px;
+    }
+    .quantity {
+      p {
+        margin-bottom:0;
+      }
+      select {
+        margin:0;
+      }
+      
+    }
+    .price {
+      p {
+        margin-top:15px;
+        margin-bottom:0;
+      }
     }
     table {
       background:none;
@@ -68,6 +88,7 @@
 
 #caracteristique {
   margin-top:20px;
+  float:left;
   table {
     width:100%;
     th {

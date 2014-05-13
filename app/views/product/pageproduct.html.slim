@@ -3,15 +3,12 @@
 
 = render 'product/name'
 .row
-	.image_caracteristique.large-4.columns
-		= render 'product/image'
-		= render 'product/caracteristique'
-		
+	= render 'product/image'
 	.card_ref_desc.large-8.columns
 		= render 'product/addcard'
 		= render 'product/ref'
 		= render 'product/description'
-		
+	= render 'product/caracteristique'	
 = render 'product/producers'
 
 = render 'global/footer'
