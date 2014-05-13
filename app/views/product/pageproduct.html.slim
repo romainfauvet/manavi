@@ -1,11 +1,17 @@
 = render 'global/header'
 = render 'global/filariane'
+
+= render 'product/name'
 .row
-	= render 'product/image'
-	= render 'product/name_ref'
-	= render 'product/addcard'
-.row
-	= render 'product/caracteristique'
-	= render 'product/description'
+	.image_caracteristique.large-4.columns
+		= render 'product/image'
+		= render 'product/caracteristique'
+		
+	.card_ref_desc.large-8.columns
+		= render 'product/addcard'
+		= render 'product/ref'
+		= render 'product/description'
+		
 = render 'product/producers'
+
 = render 'global/footer'

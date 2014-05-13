@@ -13,10 +13,12 @@
 = render 'homepage/selection'
 = render 'homepage/news_products'
 
-.row data-equalizer=''
-  = render 'homepage/values'
-  = render 'homepage/producers'
-= render 'homepage/news'
+.row
+	.value_producers.large-6.medium-6.small-12.columns
+		= render 'homepage/values'
+		= render 'homepage/producers'	
+	= render 'homepage/news'
+	
 = render 'global/newsletter_reseaux'
 = render 'global/reassurance'
 = render 'global/footer'

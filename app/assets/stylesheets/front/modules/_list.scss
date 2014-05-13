@@ -1,19 +1,19 @@
 
 
 .homepage-list {
-  margin-bottom:30px;
+  margin-bottom:20px;
 }
 
 .titreh2 {
   background:image-url('bg_h2.gif') center repeat-x;
-  margin-bottom:10px;
+  margin-bottom:12px;
   .fondblanc { 
     text-align:center;
     h2 {
       display:inline; 
       margin:auto;
       font-size:2em;
-      background:#F7F7F7;
+      background:#F0F0F0;
       padding:0 10px;
       color:$red;
       @include font_titre;

@@ -1,26 +1,46 @@
 body {
-  font-size:0.9em;
+  font-size:13px;
+  font-size:15px;
   color:$grey!important;
   height:auto!important;
-  background:#F7F7F7;
-}
-ul, ol, dl {
-  font-size:0.9em;
+  background:#F0F0F0;
 }
 p{
-  font-size:1em;
-  line-height: 1.3em;
+  font-size:13px;
   margin-bottom: 15px;
+  line-height:17px;
   }
 li {
-  font-size:1em;
-  line-height: 1.3em;
-  }
+  font-size:13px;
+  line-height:17px;
+}
 span {
-  line-height:1.3em;
-  }
+  line-height:17px;
+}
 
 .clear{
   clear:both;
 }
 
+h1 {
+  color:$red;
+  font-size:30px;
+  @include font_titre;
+}
+
+h2 {
+  color:$red;
+  @include font_titre;
+  font-size:1.2em;
+  font-weight:bold;
+}
+
+h3 {
+  margin:10px; 
+  margin-top:5px!important;
+  @include font_titre;
+}
+
+h4 {
+  margin-bottom: 5px!important;
+}

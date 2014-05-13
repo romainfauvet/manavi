@@ -7,7 +7,8 @@ Manavi::Application.routes.draw do
   root 'homepage#index'
   get 'listproduct/listproduct' => 'listproduct#listproduct'
   get 'product/pageproduct' => 'product#pageproduct'
- 
+  get 'compte/login' => 'compte#login'
+  
   namespace :admin do
     resources :categories, only: [:index, :create, :destroy]
     root "categories#index"

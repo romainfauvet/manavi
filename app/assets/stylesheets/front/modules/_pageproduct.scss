@@ -1,36 +1,25 @@
-#name_ref {
-  h1 {
-    color:$red;
-    font-size:30px;
-    @include font_titre;
-  }
-  .ref span {
+#ref_producteur {
+  margin-top:20px;
+  .ref span{
     display:block;
-  }
-  .producteur {
-    margin-top:10px;
-    p {
-      display:block;
-      color:$grey;
-      margin-bottom:5px;
-    }
-    .nom {
-      background:$red;
-      padding:2px 4px;
-      color:$white;
-      text-transform:uppercase;
-    }
   }
 }
 
 #addcard {
   .panel {
-    background:$white;
-    padding:10px;
+    background:image-url('bg-logo-ajout-panier.png') no-repeat top left $white;
+    padding:10px 0;
+    .labelstock p{
+      background:$green;
+      float:left;
+      padding:5px 10px;
+      color:$white;
+    }
     span {
       font-size:10px;
     }
     table {
+      background:none;
       border:none;
       width:100%;
       margin-bottom:0;
@@ -58,7 +47,7 @@
         text-align:center;
         color:$white;
         margin:0;
-        font-size:1.3em;
+        font-size:20px;
         display:block;
       }      
     }
@@ -69,7 +58,7 @@
         text-align:center;
         color:$white;
         margin:0;
-        font-size:0.8em;
+        font-size:13px;
         display:block;
       }      
     }
@@ -92,10 +81,6 @@
 
 #description {
   margin-top:20px;
-  h2 {
-    color:$red;
-    @include font_titre;
-    font-size:1.2em;
-    font-weight:bold;
-  }
+  border-top:solid 1px #d8d8d8;
+  padding-top:10px;
 }
