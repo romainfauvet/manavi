@@ -81,7 +81,7 @@ header .toptop {
 header .topbot {
   @include box_shaow; 
   line-height:0px!important; 
-  margin-bottom:15px;
+  /*margin-bottom:15px;*/
   .logo a { 
     padding:0!important;
     @include font_titre;
@@ -145,14 +145,35 @@ header .topbot {
 
 /*slider*/
 .orbit-container {
-  margin-top:5px;
+  /*margin-top:5px;*/
   margin-bottom:10px;
   .orbit-bullets {
     float:right!important;
     top:0!important;
      margin-bottom:15px!important;
-   }
+  }
+  .orbit-prev {
+    background:image-url('slider_left.png') no-repeat left;
+    height:58px;
+    width:28px;
+    span {
+      border:0!important;
+    } 
+  }
+  .orbit-next {
+    background:image-url('slider_right.png') no-repeat right;
+    height:58px;
+    width:28px;
+    span {
+      border:0!important;
+    } 
+  }
+  a:hover {
+    background-color:initial!important; 
+  }
 }
+
+
 
 
 
@@ -163,5 +184,9 @@ header .topbot {
   header .top-bar-section ul li a {
     font-size:1em; 
     line-height:2.4em;
+  }
+  
+  header .topbot {
+    height: 43px;
   }
 }

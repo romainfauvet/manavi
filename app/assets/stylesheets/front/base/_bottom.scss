@@ -12,6 +12,29 @@ $padding-big: ($padding-medium*2);
 transition: background .2s ease-in;
 }
 
+.defaultbottom {    
+    a{
+      padding:5px 10px;
+      background:$red;
+      @include transition;
+      color:$white;
+    }
+    a:hover {
+      background:$upred;
+    }
+}
+
+/*bouton dans formulaire*/
+button {
+  padding:5px 10px;
+  background:$red;
+  @include transition;
+  color:$white;
+}
+button:hover {
+  background:$upred;
+}
+
 
 /* bouton standard */
 .button { margin-top:5px; margin-bottom:0; width:100%; text-align: center; padding: $padding; @include transition; 

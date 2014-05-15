@@ -1,7 +1,7 @@
 body {
   font-size:13px;
   font-size:15px;
-  color:$grey!important;
+  color:#333333;
   height:auto!important;
   background:#F0F0F0;
 }
@@ -44,3 +44,12 @@ h3 {
 h4 {
   margin-bottom: 5px!important;
 }
+
+.panel {
+  padding:10px;
+}
+
+table {
+  width:100%;
+}
+
