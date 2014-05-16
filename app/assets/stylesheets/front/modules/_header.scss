@@ -1,6 +1,6 @@
 
 
-@mixin font_titre {font-family: 'Quando', 'serif';}
+@mixin font_titre {font-family: 'Bitter', serif;}
 
 @mixin box_shaow {-moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
 -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
@@ -35,10 +35,13 @@ header .toptop {
     margin:0;
     img {
       margin-left:5px;
+      width:70%;
+      margin-top:5px;
     }
     span {
-      font-size:0.27em;
-      color:$beige_claire; 
+      font-size: 13px;
+      margin-top: 5px;
+      color:$red; 
       display:block; 
       @include font_titre;
       margin-left:5px;

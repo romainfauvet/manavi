@@ -1,10 +1,12 @@
-#home-actu.row
-	.panel
-	    h3 L'actu responsable
+#home-actu
+	.row
+		.titreh2
+				.fondblanc
+					h2.text-center L'actu responsable
 	    - Actu.all.in_groups_of(3, false).each do |actus|
-		    ul
+		    ul.large-block-grid-3.medium-block-grid-3.small-block-grid-1
 		    	- actus.each do |actu|
-			    	li.large-4.medium-6.small-12.columns
+			    	li
 			    		.actu
 			    			span.date 21 novembre 2013
 			    			= image_tag "art1.jpg"
