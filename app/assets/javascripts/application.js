@@ -18,6 +18,7 @@
 //= require switchviewproduct/classie.js
 //= require switchviewproduct/modernizr.custom.js
 
+
 $(function(){
   $(document).foundation({
     orbit: {
@@ -25,7 +26,7 @@ $(function(){
       timer_speed: 1000,
       navigation_arrows: true,
       slide_number: false,
-      bullets: true
+      bullets: false
 	}
   });  	
 });

@@ -1,0 +1,107 @@
+
+.card_ref_desc {
+  float:right;
+}
+
+#ref_producteur {
+  margin-top:20px;
+  .ref span{
+    display:block;
+  }
+}
+
+#addcard {
+  .panel {
+    background:image-url('bg-logo-ajout-panier.png') no-repeat top left $white;
+    padding:10px 0;
+    .labelstock p{
+      background:$green;
+      float:left;
+      padding:5px 10px;
+      color:$white;
+    }
+    span {
+      font-size:10px;
+    }
+    .quantity {
+      p {
+        margin-bottom:0;
+      }
+      select {
+        margin:0;
+      }
+      
+    }
+    .price {
+      p {
+        margin-top:15px;
+        margin-bottom:0;
+      }
+    }
+    table {
+      background:none;
+      border:none;
+      width:100%;
+      margin-bottom:0;
+      tr{
+        background:none;
+        td{
+          padding:0;
+          .alignright{
+            text-align:right;
+            font-weight:bold;
+            font-size:1.3em;
+            span {
+              font-size:0.8em;
+              font-weight:normal;
+            }
+          }
+        }
+      }
+    }
+    .addcartpanel {
+      background:$red;
+      padding:15px 0;
+      margin-bottom:5px;
+      a{
+        text-align:center;
+        color:$white;
+        margin:0;
+        font-size:20px;
+        display:block;
+      }      
+    }
+    .addfavoritepanel {
+      background:$brown;
+      padding:5px 0;
+      a {
+        text-align:center;
+        color:$white;
+        margin:0;
+        font-size:13px;
+        display:block;
+      }      
+    }
+  }
+}
+
+
+#caracteristique {
+  margin-top:20px;
+  float:left;
+  table {
+    width:100%;
+    th {
+      text-align:left;
+      color:$red;
+      @include font_titre;
+      font-size:1.2em;
+    }
+  }
+}
+
+#description {
+  margin-top:20px;
+  border-top:solid 1px #d8d8d8;
+  padding-top:10px;
+}

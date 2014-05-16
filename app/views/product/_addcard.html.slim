@@ -1,0 +1,47 @@
+#addcard.large-12
+	.panel.row
+		
+		.large-4.columns
+			.labelstock
+				p En stock
+				.clear
+			
+			.quantity
+				table
+					tr
+						td
+							p Quantité
+						td
+							select
+							  option value="1"  1
+							  option value="2"  2
+							  option value="3"  3
+							  option value="4"  4	
+				
+		
+		.price.large-4.columns
+			table
+				tr
+					td
+						p Prix unitaire :
+					td
+						p.alignright
+							'34.35
+							span € TTC
+				tr
+					td
+						p Prix total :
+					td
+						p.alignright
+							'135.55 
+							span € TTC		
+		
+		.large-4.columns
+			.addcartpanel
+				= link_to "#" do 
+					'Ajouter au panier
+			
+			.addfavoritepanel
+				= link_to "#" do
+					'Ajouter aux favotis
+		.clear

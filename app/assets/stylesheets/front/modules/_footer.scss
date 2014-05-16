@@ -1,18 +1,41 @@
 .papier {background:image-url('bg_papier.png');}
 
 
-footer { margin-top: 30px;
-  .footer-top { background:$brown; padding:5px 0;
-    span {color:$white;text-align:center;display:block;font-size:1.3em; }    
+footer { 
+  margin-top: 30px;
+  .footer-top { 
+    background:$brown;
+    padding:5px 0;
+    span {
+      color:$white;
+      text-align:center;
+      display:block;
+      font-size:1.3em;
+    }    
   }
   
-  .footer-bot { color:$grey; 
-    .row{ padding:10px 0; background:image-url('logo_footer.png') right 150px top no-repeat;
-      h4 {font-size:1.2em; color:$grey;}
-      span {font-size: 0.8em;color:$grey;}
-      ul {padding:0;margin:0;
-        li {list-style:none;padding:0;
-          a {color:$grey;}      
+  .footer-bot { 
+    color:$grey; 
+    .row{ 
+      padding:10px 0;
+      background:image-url('logo_footer.png') right 150px top no-repeat;
+      h4 {
+        font-size:1.2em;
+        color:$grey;
+      }
+      span {
+        font-size: 0.8em;
+        color:$grey;
+      }
+      ul {
+        padding:0;
+        margin:0;
+        li {
+          list-style:none;
+          padding:0;
+          a {
+            color:$grey;
+          }      
         }
       }
     }  

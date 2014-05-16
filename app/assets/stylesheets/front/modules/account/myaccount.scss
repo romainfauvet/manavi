@@ -1,0 +1,54 @@
+.sidebar {
+  .panel{
+    background:$white;
+    h4 {
+      color:$red;
+      font-size:20px;
+    }
+    ul {
+      margin-left:10px;
+      li {
+        list-style:none;
+        margin-bottom:5px;
+      }
+    }
+    a {
+      color:$grey;
+    }
+    a:hover {
+      color:$red;
+    }
+    p {
+      margin-bottom:5px;
+    }     
+  }
+}
+
+.signup {
+  margin-bottom:20px;
+  padding-left:0px;
+  border-left:solid 1px #D5D5D5;
+  p {
+    font-size:20px;
+  }
+}
+
+.margin {
+  margin-bottom:30px;
+}
+
+h1.compte {
+  margin-top:15px;
+}
+
+.myaccountfarorites {
+  .cbp-vm-view-grid .list a .label img {
+    width:65%;
+  }
+  .cbp-vm-view-grid .list a .desc p {
+    font-size:13px;
+  }
+  .cbp-vm-view-grid .list a .image_prix .prix span {
+    padding:2px 5px;
+  }
+}

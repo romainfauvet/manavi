@@ -1,10 +1,11 @@
 .newsletter_reseaux {
   margin-bottom:30px;
-  margin-left:30px;
   .newsletter {
+    margin-left:15px;
     .champs {
       width:80%!important;
-      margin-bottom:0;}
+      margin-bottom:0;
+    }
     .bouton {
       width:20%!important;
       height:100%;
@@ -28,6 +29,21 @@
         list-style:none;
         display:inline-block;
         margin:3px;
+      }
+      .facebook a, .twitter a, .google a {
+        background:$red;
+        height:33px;
+        width:33px;
+        display:block;
+      }
+      .facebook:hover a{
+        background:#4C66A4;
+      }
+      .twitter:hover a{
+        background:#55ACEE;
+      }
+      .google:hover a{
+        background:#DD4B39;
       }
     }
   }

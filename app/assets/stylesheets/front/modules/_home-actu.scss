@@ -1,16 +1,8 @@
 #home-actu {
   .panel {
-    margin:0px 15px 30px 15px;
     background:$grey_light;
-    padding:10px 0!important;
-  }
-  h3 {
-    color:$white !important;
-    border-bottom:solid 1px $white;
-    padding-bottom:5px;
-    @include font_titre;
-    margin-left:10px;
-    margin-right:10px;
+    padding:4px 4px  1px 4px;
+    @include box_shaow_light;
   }
   ul {
     margin:0;
@@ -20,14 +12,16 @@
     }
     li {
       list-style:none;
+      margin:10px 0;
+      background:$white;
+      padding:6px;
       .actu {
-        background:$white;
-        padding:10px;
+
         h4 {
-          color:$brown;
+          color:$red;
         }
         .date {
-          font-size:0.6em;
+          font-size:0.8em;
           color:$grey;
           display:block;
         }
@@ -43,6 +37,9 @@
           font-size:0.8em;
           @include font_titre;
         }
+      }
+      .padding {
+        padding-bottom:10px;
       }
     }
   }

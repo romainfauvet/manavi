@@ -1,12 +1,16 @@
+= render 'global/header'
 
 = render 'homepage/slider'
+
 = render 'homepage/selection'
 = render 'homepage/news_products'
 
 .row
-  = render 'homepage/values'
-  = render 'homepage/producers'
-= render 'homepage/news'
+	.value_producers.large-6.medium-6.small-12.columns
+		= render 'homepage/values'
+		= render 'homepage/producers'
+	= render 'homepage/news'
 
 = render 'global/newsletter_reseaux'
 = render 'global/reassurance'
+= render 'global/footer'
