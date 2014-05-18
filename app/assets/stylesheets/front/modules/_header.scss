@@ -86,24 +86,31 @@ header .toptop {
 
 /*NAVIGATION BOTTOM*/
 header {
-  .papier {
+  .papier {    
     @include box_shaow; 
-    .top-bar {    
-      line-height:0px!important; 
-      .logo a { 
-        padding:0!important;
-        width: 150px;
-        padding-top:3px!important;
-        height:40px;
-        img { 
-          width:95%;
-          margin-bottom:5px;
+    .title-area {
+      .logo {
+        width:150px;
+        a { 
+          padding:0!important;
+          width: 150px;
+          padding-top:3px!important;
+          height:40px;
+          img { 
+            width:85%;
+            margin-bottom:5px;
+          }
         }
       }
+      .toggle-topbar.menu-icon {
+        margin-top:0;
+      }
+    }
+    .top-bar {    
+      line-height:0px!important; 
       .top-bar-section {
         ul{ 
           background:none!important;
-          width:100%!important;
           li {
             a {
               @include font_titre;
@@ -114,27 +121,40 @@ header {
             a:after {
               content:none!important;
             }
-            .button {
-              margin-top:0;
-              background:$red!important;
-              padding:0!important;
-            }
-          }
-          .has-dropdown:hover {
-            background:$red;
-          }
-          .has-form {
-            background:none!important;
-            padding: 0 6px;
-            height: 40px;
-            input, .button {
-              top:5px;
-            }
-            .button {
-              line-height: 29px!important;
-            }
           }
         }
+      }
+      .has-dropdown:hover {
+        background:$red;
+      }
+      .has-form {
+        background:none!important;
+        padding: 0 6px;
+        height: 40px;
+        input, .button {
+          top:5px;
+        }
+        .button {
+          line-height: 29px!important;
+          margin-top:0;
+          background:$red!important;
+          padding:0!important;
+        }
+      }
+    }
+    .top-bar.expanded {
+      .toggle-topbar a{
+        color:$red;
+        span {
+          box-shadow:none;
+        }
+      }
+      .top-bar-section ul li > a {
+        padding:0;
+        padding-left:15px;
+      }
+      .has-form .button {
+        top:0;
       }
     }
   }
@@ -244,6 +264,9 @@ header {
     .papier .top-bar .top-bar-section ul.dropdown .dropdown {
       top:0;
       bottom:0;
+    } 
+    .title-area {
+      width:150px;
     }
   }  
 }
@@ -254,7 +277,18 @@ header {
     display:none;
   }
   header .papier {
-    position:relative!important;
+    nav {
+      section {
+        display:none;
+      }
+    }
+    nav.expanded {
+      section {
+        display:block;
+      }
+    }
   }
-  
+  .homepage-list.selection {
+    margin-top:25px;
+  }
 }
