@@ -18,6 +18,7 @@ header .top-bar {
   height:auto; 
   background:none;
   }
+  
 header {
   z-index:99;
   position:relative; 
@@ -30,6 +31,9 @@ header .toptop {
   .logo {
     position:absolute;
     z-index:2;
+    img {
+      height:121px;
+    }
   }
   h1 {
     margin:0;
@@ -56,12 +60,12 @@ header .toptop {
       padding:0 5px;
       a {
         padding:0!important;
+        display:block;
         background:none!important;
       }
       span {
         display:block;
-        font-size:0.9em;
-        line-height:1.8em; 
+        font-size:13px!important;
         @include font_titre; 
         color:#BE272D;
       }    
@@ -81,67 +85,95 @@ header .toptop {
 
 
 /*NAVIGATION BOTTOM*/
-header .topbot {
-  @include box_shaow; 
-  line-height:0px!important; 
-  /*margin-bottom:15px;*/
-  .logo a { 
-    padding:0!important;
-    @include font_titre;
-    img { 
-      width:85%;
-      margin-bottom:2px;
-    }
-  }
-  .top-bar-section {
-    ul{ 
-      float:left; 
-      background:none;
-      li {
-        background:none; 
-        display:inline-block;
-        a {
-          background:none!important;
-          @include font_titre; 
-          font-size:1em;
-          line-height: 2.5em!important;
-          padding-left: 0px;
+header {
+  .papier {
+    @include box_shaow; 
+    .top-bar {    
+      line-height:0px!important; 
+      .logo a { 
+        padding:0!important;
+        width: 150px;
+        padding-top:3px!important;
+        height:40px;
+        img { 
+          width:95%;
+          margin-bottom:5px;
         }
       }
-      .has-form{
-        background:none;
-        padding:0; 
-        height:auto;
+      .top-bar-section {
+        ul{ 
+          background:none!important;
+          width:100%!important;
+          li {
+            a {
+              @include font_titre;
+              background:none!important;
+              font-size:15px!important;
+              line-height: 40px!important;
+            }
+            a:after {
+              content:none!important;
+            }
+            .button {
+              margin-top:0;
+              background:$red!important;
+              padding:0!important;
+            }
+          }
+          .has-dropdown:hover {
+            background:$red;
+          }
+          .has-form {
+            background:none!important;
+            padding: 0 6px;
+            height: 40px;
+            input, .button {
+              top:5px;
+            }
+            .button {
+              line-height: 29px!important;
+            }
+          }
+        }
       }
-    }
-  }
-  
-  input {
-    top:5px;
-  }
-  .button {
-    @extend input;
-    position: absolute;
-  }
-  .m-search--btn-validate-header{  
-    background-color: #BE272D;  
-    border-color: #009091;
-    padding: 4px 0;
-  }
-  
-  .recherche {
-    .champs {
-      width:85%!important; 
-      margin-bottom:0;
-    }
-    .bouton {
-      background:$red; 
-      color:$white; 
-      border:none;
-      position: absolute;
     }
   }
 }
+
+
+/*sousmenu*/
+
+.top-bar-section .has-dropdown.hover .sousmenu > .dropdown, .top-bar-section .has-dropdown.not-click:hover .sousmenu > .dropdown {
+  display:block;
+}
+
+
+header {
+  .papier .top-bar .top-bar-section ul.dropdown {
+    background:$red!important;
+    li:hover {
+      background:#C9C6C6;
+    }
+    .dropdown {
+      background:#C9C6C6!important;
+      /*top:0;
+      bottom:0;*/
+      li:hover {
+        background:$white!important;
+        a {
+          color:$grey;
+        }
+      }
+      .dropdown {
+        background:$white!important;
+        a{
+          color:$grey;
+        }
+      }
+    }
+  }
+}
+
 
 
 [data-magellan-expedition] {padding:0;}
@@ -181,8 +213,14 @@ header .topbot {
 
 
 @media #{$large-up} {
-  header .toptop h1{
-    margin-left:170px;
+  header .papier .top-bar{
+    height: 40px;
+  }
+  
+  header .toptop {
+    h1{
+      margin-left:160px;
+    }
   }
   header .top-bar-section ul li a {
     font-size:1em; 
@@ -192,4 +230,31 @@ header .topbot {
   header .topbot {
     height: 43px;
   }
+}
+
+@media #{$medium-up} { 
+  
+  header {
+    .top-bar-section .has-dropdown {
+      position: initial;
+    }
+    .top-bar-section .has-dropdown.relative {
+      position:relative;
+    }
+    .papier .top-bar .top-bar-section ul.dropdown .dropdown {
+      top:0;
+      bottom:0;
+    }
+  }  
+}
+
+
+@media #{$small-only} { 
+  .orbit-container {
+    display:none;
+  }
+  header .papier {
+    position:relative!important;
+  }
+  
 }
