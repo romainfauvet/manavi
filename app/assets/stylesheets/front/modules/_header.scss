@@ -1,6 +1,6 @@
 
 
-@mixin font_titre {font-family: 'Quando', 'serif';}
+@mixin font_titre {font-family: 'Bitter', serif;}
 
 @mixin box_shaow {-moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
 -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
@@ -18,6 +18,7 @@ header .top-bar {
   height:auto; 
   background:none;
   }
+  
 header {
   z-index:99;
   position:relative; 
@@ -30,15 +31,21 @@ header .toptop {
   .logo {
     position:absolute;
     z-index:2;
+    img {
+      height:121px;
+    }
   }
   h1 {
     margin:0;
     img {
       margin-left:5px;
+      width:70%;
+      margin-top:5px;
     }
     span {
-      font-size:0.27em;
-      color:$beige_claire; 
+      font-size: 13px;
+      margin-top: 5px;
+      color:$red; 
       display:block; 
       @include font_titre;
       margin-left:5px;
@@ -53,12 +60,12 @@ header .toptop {
       padding:0 5px;
       a {
         padding:0!important;
+        display:block;
         background:none!important;
       }
       span {
         display:block;
-        font-size:0.9em;
-        line-height:1.8em; 
+        font-size:13px!important;
         @include font_titre; 
         color:#BE272D;
       }    
@@ -78,67 +85,115 @@ header .toptop {
 
 
 /*NAVIGATION BOTTOM*/
-header .topbot {
-  @include box_shaow; 
-  line-height:0px!important; 
-  /*margin-bottom:15px;*/
-  .logo a { 
-    padding:0!important;
-    @include font_titre;
-    img { 
-      width:85%;
-      margin-bottom:2px;
-    }
-  }
-  .top-bar-section {
-    ul{ 
-      float:left; 
-      background:none;
-      li {
-        background:none; 
-        display:inline-block;
-        a {
-          background:none!important;
-          @include font_titre; 
-          font-size:1em;
-          line-height: 2.5em!important;
-          padding-left: 0px;
+header {
+  .papier {    
+    @include box_shaow; 
+    .title-area {
+      .logo {
+        width:150px;
+        a { 
+          padding:0!important;
+          width: 150px;
+          padding-top:3px!important;
+          height:40px;
+          img { 
+            width:85%;
+            margin-bottom:5px;
+          }
         }
       }
-      .has-form{
-        background:none;
-        padding:0; 
-        height:auto;
+      .toggle-topbar.menu-icon {
+        margin-top:0;
       }
     }
-  }
-  
-  input {
-    top:5px;
-  }
-  .button {
-    @extend input;
-    position: absolute;
-  }
-  .m-search--btn-validate-header{  
-    background-color: #BE272D;  
-    border-color: #009091;
-    padding: 4px 0;
-  }
-  
-  .recherche {
-    .champs {
-      width:85%!important; 
-      margin-bottom:0;
+    .top-bar {    
+      line-height:0px!important; 
+      .top-bar-section {
+        ul{ 
+          background:none!important;
+          li {
+            a {
+              @include font_titre;
+              background:none!important;
+              font-size:15px!important;
+              line-height: 40px!important;
+            }
+            a:after {
+              content:none!important;
+            }
+          }
+        }
+      }
+      .has-dropdown:hover {
+        background:$red;
+      }
+      .has-form {
+        background:none!important;
+        padding: 0 6px;
+        height: 40px;
+        input, .button {
+          top:5px;
+        }
+        .button {
+          line-height: 29px!important;
+          margin-top:0;
+          background:$red!important;
+          padding:0!important;
+        }
+      }
     }
-    .bouton {
-      background:$red; 
-      color:$white; 
-      border:none;
-      position: absolute;
+    .top-bar.expanded {
+      .toggle-topbar a{
+        color:$red;
+        span {
+          box-shadow:none;
+        }
+      }
+      .top-bar-section ul li > a {
+        padding:0;
+        padding-left:15px;
+      }
+      .has-form .button {
+        top:0;
+      }
     }
   }
 }
+
+
+/*sousmenu*/
+
+.top-bar-section .has-dropdown.hover .sousmenu > .dropdown, .top-bar-section .has-dropdown.not-click:hover .sousmenu > .dropdown {
+  display:block;
+}
+
+
+header {
+  .papier .top-bar .top-bar-section ul.dropdown {
+    background:$red!important;
+    li:hover {
+      background:#C9C6C6;
+    }
+    .dropdown {
+      background:#C9C6C6!important;
+      /*top:0;
+      bottom:0;*/
+      li:hover {
+        background:$white!important;
+        a {
+          color:$grey;
+        }
+      }
+      .dropdown {
+        background:$white!important;
+        a{
+          color:$grey;
+        }
+      }
+    }
+  }
+}
+
 
 
 [data-magellan-expedition] {padding:0;}
@@ -178,8 +233,14 @@ header .topbot {
 
 
 @media #{$large-up} {
-  header .toptop h1{
-    margin-left:170px;
+  header .papier .top-bar{
+    height: 40px;
+  }
+  
+  header .toptop {
+    h1{
+      margin-left:160px;
+    }
   }
   header .top-bar-section ul li a {
     font-size:1em; 
@@ -188,5 +249,46 @@ header .topbot {
   
   header .topbot {
     height: 43px;
+  }
+}
+
+@media #{$medium-up} { 
+  
+  header {
+    .top-bar-section .has-dropdown {
+      position: initial;
+    }
+    .top-bar-section .has-dropdown.relative {
+      position:relative;
+    }
+    .papier .top-bar .top-bar-section ul.dropdown .dropdown {
+      top:0;
+      bottom:0;
+    } 
+    .title-area {
+      width:150px;
+    }
+  }  
+}
+
+
+@media #{$small-only} { 
+  .orbit-container {
+    display:none;
+  }
+  header .papier {
+    nav {
+      section {
+        display:none;
+      }
+    }
+    nav.expanded {
+      section {
+        display:block;
+      }
+    }
+  }
+  .homepage-list.selection {
+    margin-top:25px;
   }
 }

@@ -1,13 +1,36 @@
 .information{ margin-bottom:20px; 
-  .panel {padding:4px!important;margin-bottom:0;position:relative;}
-  .text {
-    background:$white;
-    padding:6px;
-    ul { padding:0; margin:0;
-      li {list-style:none; padding:0; margin:0;clear:both;}
-     }
-    p {color:$brown_dark;font-size:1em;}
-    img {float:left;margin-right:10px;}
-  }     
+  ul { padding:0; margin:0;
+    li {
+      list-style:none; 
+      padding:0;
+      margin:0;
+      clear:both;
+      }
+   }
+  p {color:$brown_dark;}
+  img {float:left;margin-right:10px;}
+  h4 { color:$red; font-size:18px;}     
 }
+
+.block_value {
+  background:#E9E8E7;
+  padding:20px 0;
+  .fondblanc {
+    h2 {
+      background:#E9E8E7;
+    }
+  }
+}
+
+.block_producers {
+  background:#e1dddb;
+  padding:20px 0;
+  .fondblanc {
+    h2 {
+      background:#e1dddb;
+    }
+  }
+}
+
+
 

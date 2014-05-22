@@ -1,22 +1,13 @@
 #home-actu {
-  .panel {
-    background:$grey_light;
-    padding:4px 4px  1px 4px;
-    @include box_shaow_light;
-  }
   ul {
     margin:0;
     padding:0;
-    .columns {
-      padding:0 10px;
-    }
     li {
       list-style:none;
       margin:10px 0;
       background:$white;
       padding:6px;
       .actu {
-
         h4 {
           color:$red;
         }
@@ -41,6 +32,17 @@
       .padding {
         padding-bottom:10px;
       }
+    }
+  }
+}
+
+
+#home-actu{
+  background:#E9E8E7;
+  padding:20px 0;
+  .fondblanc {
+    h2 {
+      background:#E9E8E7;
     }
   }
 }
