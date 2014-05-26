@@ -11,7 +11,7 @@ Manavi::Application.routes.draw do
   get '/pages/*actus/:id', to: 'pages#show'
   get 'listproduct/listproduct' => 'listproduct#listproduct'
   get 'product/pageproduct' => 'product#pageproduct'
-  get 'account/login' => 'connect#login'
+  get 'connect/login' => 'connect#login'
 
   namespace :admin do
     root "dashboard#index"
