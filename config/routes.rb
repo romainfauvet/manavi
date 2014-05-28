@@ -12,6 +12,7 @@ Manavi::Application.routes.draw do
   get 'listproduct/listproduct' => 'listproduct#listproduct'
   get 'product/pageproduct' => 'product#pageproduct'
   get 'account/login' => 'connect#login'
+  get 'company/company' => 'company#company'
 
   namespace :admin do
     root "dashboard#index"

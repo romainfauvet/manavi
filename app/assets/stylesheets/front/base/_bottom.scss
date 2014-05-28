@@ -63,7 +63,7 @@ button:hover {
 
 
 /* Voir tous les produits */
-.allselection { background: url('bullet.gif') center left no-repeat ; padding-left: 12px; float: right;margin-right:10px;margin-top: 10px;
+.allselection { background: url('bullet.gif') center left no-repeat ; padding-left: 12px; float: right;margin-top: 10px;
   a { color: $brown; text-decoration: underline;}
   a:hover { color: $upbrown;  @include transition;}
 }

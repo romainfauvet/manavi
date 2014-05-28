@@ -6,8 +6,12 @@
     background:image-url('border_dashed.png') repeat-x bottom;
     padding-bottom:10px;
   }
-  li{
-    list-style:none;
-    text-align:center;
+  ul {
+    margin:0!important;
+    li{
+      list-style:none;
+      text-align:center;
+      padding: 5px 0!important;
+    }
   }
 }
