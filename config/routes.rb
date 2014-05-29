@@ -13,7 +13,9 @@ Manavi::Application.routes.draw do
   get 'product/pageproduct' => 'product#pageproduct'
   get 'account/login' => 'connect#login'
   get 'company/company' => 'company#company'
-
+  get 'actunew/listactu' => 'actunew#listactu'
+  get 'actunew/actu' => 'actunew#actu'
+  
   namespace :admin do
     root "dashboard#index"
     resource :dashboard, only: :index
