@@ -8,10 +8,10 @@ $("#img_principal").elevateZoom({
 	responsive :"true"	
 });
 
-/*
+
 //pass the images to Fancybox 
 $("#img_principal").bind("click", function(e) { 
 	var ez = $('#img_principal').data('elevateZoom');	
 		$.fancybox(ez.getGalleryList()); 
 	return false; 
-});*/
+});

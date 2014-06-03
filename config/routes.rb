@@ -11,8 +11,9 @@ Manavi::Application.routes.draw do
   get '/pages/*actus/:id', to: 'pages#show'
   get 'listproduct/listproduct' => 'listproduct#listproduct'
   get 'product/pageproduct' => 'product#pageproduct'
-  get 'account/login' => 'connect#login'
   get 'company/company' => 'company#company'
+  get 'connect/login' => 'connect#login'
+  get 'connect/myaccount' => 'connect#myaccount'
   get 'actunew/listactu' => 'actunew#listactu'
   get 'actunew/actu' => 'actunew#actu'
   
