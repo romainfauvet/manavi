@@ -21,6 +21,8 @@ Manavi::Application.routes.draw do
   get 'card/livraison' => 'card#livraison'
   get 'card/paiement' => 'card#paiement'
   get 'card/confirmation' => 'card#confirmation'
+  get 'listproducer/listproducer' => 'listproducer#listproducer'
+  get 'producer/pageproducer' => 'producer#pageproducer'
   
   namespace :admin do
     root "dashboard#index"
