@@ -17,6 +17,10 @@ Manavi::Application.routes.draw do
   get 'actunew/listactu' => 'actunew#listactu'
   get 'actunew/actu' => 'actunew#actu'
   get 'card/card' => 'card#card'
+  get 'card/coordonnee' => 'card#coordonnee'
+  get 'card/livraison' => 'card#livraison'
+  get 'card/paiement' => 'card#paiement'
+  get 'card/confirmation' => 'card#confirmation'
   
   namespace :admin do
     root "dashboard#index"

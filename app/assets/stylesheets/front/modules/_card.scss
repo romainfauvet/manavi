@@ -5,8 +5,11 @@
   }
   .button.accessproduct {
     background:$grey_light;
+    width:15%;
+    padding:5px!important;
     span {
       color:#333333;
+      font-size:13px;
     }
   }  
 }
@@ -17,9 +20,16 @@
     font-size:35px;
     margin-bottom:10px;
     color:$red;
+    span {
+      font-size:13px;
+      color:$grey;
+    }
   }
   p {
     text-align:right;
+    span {
+      color:$red;
+    }
   }
 }
 
@@ -27,4 +37,15 @@
   margin-bottom:20px;
 }
 
+
+/*LIVRAISON*/
+.adresse {
+  margin-bottom:30px;
+  span {
+    display:block;
+  }
+  .allselection {
+    float:left;
+  }
+}
 

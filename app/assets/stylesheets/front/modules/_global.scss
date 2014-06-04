@@ -81,3 +81,31 @@ table {
   background:$red;
 }
 
+.borderleft {
+  border-left:solid 1px #D5D5D5;
+}
+
+.sidebarservice.panel {
+  background:$white;
+  h4 {
+    color:$red;
+    font-size:20px;
+  }
+  a {
+    color:$grey;
+  }
+  a:hover {
+    color:$red;
+  }
+  p {
+    margin-bottom:5px;
+  }     
+}
+
+.sansariane {
+  margin-top:30px;
+}
+
+.marginbottom {
+  margin-bottom:30px;
+}
