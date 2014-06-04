@@ -1,0 +1,30 @@
+.listcard {
+  border-left:none!important;
+  .cbp-vm-view-list .image_prix img {
+    width:7%;
+  }
+  .button.accessproduct {
+    background:$grey_light;
+    span {
+      color:#333333;
+    }
+  }  
+}
+
+.command {
+  margin-bottom:30px;
+  .totalprice p {
+    font-size:35px;
+    margin-bottom:10px;
+    color:$red;
+  }
+  p {
+    text-align:right;
+  }
+}
+
+.listcard.pagelist {
+  margin-bottom:20px;
+}
+
+

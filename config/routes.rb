@@ -16,6 +16,7 @@ Manavi::Application.routes.draw do
   get 'connect/myaccount' => 'connect#myaccount'
   get 'actunew/listactu' => 'actunew#listactu'
   get 'actunew/actu' => 'actunew#actu'
+  get 'card/card' => 'card#card'
   
   namespace :admin do
     root "dashboard#index"
