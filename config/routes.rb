@@ -12,17 +12,30 @@ Manavi::Application.routes.draw do
   get 'listproduct/listproduct' => 'listproduct#listproduct'
   get 'product/pageproduct' => 'product#pageproduct'
   get 'company/company' => 'company#company'
+  
   get 'connect/login' => 'connect#login'
   get 'connect/myaccount' => 'connect#myaccount'
+  get 'connect/command' => 'connect#command'
+  get 'connect/carnetadresse' => 'connect#carnetadresse'
+  get 'connect/favoris' => 'connect#favoris'
+  get 'connect/motdepasse' => 'connect#motdepasse'
+  get 'connect/coordonnee' => 'connect#coordonnee'
+  get 'connect/updateadresse' => 'connect#updateadresse'
+  get 'connect/addadresse' => 'connect#addadresse'
+  
   get 'actunew/listactu' => 'actunew#listactu'
   get 'actunew/actu' => 'actunew#actu'
+  
   get 'card/card' => 'card#card'
   get 'card/coordonnee' => 'card#coordonnee'
-  get 'card/livraison' => 'card#livraison'
+  get 'card/livraison' => 'card#livraison'  
   get 'card/paiement' => 'card#paiement'
   get 'card/confirmation' => 'card#confirmation'
+  get 'card/addadresse' => 'card#addadresse'
+  
   get 'listproducer/listproducer' => 'listproducer#listproducer'
   get 'producer/pageproducer' => 'producer#pageproducer'
+  
   
   namespace :admin do
     root "dashboard#index"

@@ -1,0 +1,26 @@
+= render 'global/header'
+.myaccount.sansariane
+	.row
+		.sidebar.large-3.columns
+			= render 'connect/sidebarmyaccount'
+			= render 'global/sidebarservice'
+		.large-9.columns
+			.titreh2
+				.fondblanc
+					h2.text-center Mon compte
+					
+			.adresse.large-6.medium-6.small-12.columns
+			  	= render 'connect/adresselivraison'
+			  	.allselection
+					= link_to "/card/addadresse" do	
+						'Ajouter votre adresse de livraison
+					
+					
+			.adresse.large-6.medium-6.small-12.borderleft.columns
+				= render 'connect/adressefacturation'
+				.allselection
+					= link_to "/card/addadresse" do	
+						'Ajouter votre adresse de livraison
+
+= render 'global/reassurance'
+= render 'global/footer'

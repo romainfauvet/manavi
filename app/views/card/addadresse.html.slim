@@ -1,0 +1,16 @@
+= render 'global/header'
+
+.row.sansariane
+	.titreh2
+		.fondblanc
+			h2.text-center Ajouter une adresse
+.row	
+	.signup.large-12.columns
+		form.large-12.left data-abide=""	
+			= render 'connect/addadresseform'
+			button.defaultbottom.right type="submit" 
+				= link_to "/card/livraison" do
+					'Ajouter l'adresse
+
+= render 'global/reassurance'
+= render 'global/footer'

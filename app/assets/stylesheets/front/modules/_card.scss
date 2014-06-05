@@ -4,7 +4,7 @@
     width:7%;
   }
   .button.accessproduct {
-    background:$grey_light;
+    background:$grey_light!important;
     width:15%;
     padding:5px!important;
     span {
@@ -46,6 +46,14 @@
   }
   .allselection {
     float:left;
+  }
+  
+  input[type=radio] {
+    margin-top:15px;
+    float:left;
+  }
+  .adresseuser {
+    margin-left:25px;
   }
 }
 

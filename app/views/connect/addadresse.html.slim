@@ -7,8 +7,11 @@
 		.large-9.columns
 			.titreh2
 				.fondblanc
-					h2.text-center Mes coordonnées
-			= render 'connect/coordonnee'
+					h2.text-center Ajouter une adresse	
+			= render 'connect/addadresseform'
+			button.defaultbottom.right type="submit" 
+		  		= link_to "/connect/carnetadresse" do
+		  			'Ajouter l'adresse
 
-= render 'global/newsletter_reseaux'
+= render 'global/reassurance'
 = render 'global/footer'

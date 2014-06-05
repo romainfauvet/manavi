@@ -7,14 +7,34 @@
 		ul.list.large-block-grid-6.medium-block-grid-3.small-block-grid-2
 			li
 				.product
-					a href="/product/pageproduct"
+					= link_to "/product/pageproduct" do
+					    .image_prix
+				      		= image_tag "produit-3.jpg"
+							.prix
+								span 2,60 €
+								.clear
+						.desc
+							p Ciment super
+							span Blanc
+						.producteur
+							p Producteur :
+							span.nom
+								'Calcia
+						.label
+				      	.button.accessproduct
+							span Voir le produit
+						.clear
+			
+			li
+				.product
+					a href="#"
 					    .image_prix
 				      		= image_tag "produit-1.jpg"
 							.prix
-								span 120€
+								span 120 €
 								.clear
 						.desc
-							p Radio solaire Scorpion
+							p Radio solaire
 							span Orange ETON
 						.producteur
 							p Producteur :
@@ -32,10 +52,10 @@
 					    .image_prix
 				      		= image_tag "produit-2.jpg"
 							.prix
-								span 15455€
+								span 15455 €
 								.clear
 						.desc
-							p Radio solaire Scorpion
+							p Radio solaire
 							span Orange ETON
 						.producteur
 							p Producteur :
@@ -45,27 +65,7 @@
 							= image_tag "label-limite.png"
 				      	.button.accessproduct
 							span Voir le produit
-						.clear
-
-			li
-				.product
-					= link_to "#" do
-					    .image_prix
-				      		= image_tag "produit-3.jpg"
-							.prix
-								span 15,10€
-								.clear
-						.desc
-							p Radio solaire Scorpion
-							span Orange ETON
-						.producteur
-							p Producteur :
-							span.nom
-								'Calcia
-						.label
-				      	.button.accessproduct
-							span Voir le produit
-						.clear
+						.clear			
 
 			li
 				.product
@@ -73,10 +73,10 @@
 					    .image_prix
 				      		= image_tag "produit-4.jpg"
 							.prix
-								span 1€
+								span 1 €
 								.clear
 						.desc
-							p Radio solaire Scorpion
+							p Radio solaire
 							span Orange ETON
 						.producteur
 							p Producteur :
@@ -92,10 +92,10 @@
 					    .image_prix
 				      		= image_tag "produit-4.jpg"
 							.prix
-								span 59,50€
+								span 59,50 €
 								.clear
 						.desc
-							p Radio solaire Scorpion
+							p Radio solaire
 							span Orange ETON
 						.producteur
 							p Producteur :
@@ -111,10 +111,10 @@
 					    .image_prix
 				      		= image_tag "produit-4.jpg"
 							.prix
-								span 100 patates
+								span 10 €
 								.clear
 						.desc
-							p Radio solaire Scorpion
+							p Radio solaire
 							span Orange ETON
 						.producteur
 							p Producteur :
