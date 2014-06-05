@@ -7,19 +7,19 @@
 		.large-9.columns
 			.titreh2
 				.fondblanc
-					h2.text-center Mon compte
+					h2.text-center Mon carnet d'adresse
 					
 			.adresse.large-6.medium-6.small-12.columns
 			  	= render 'connect/adresselivraison'
 			  	.allselection
-					= link_to "/card/addadresse" do	
+					= link_to "/connect/addadresse" do	
 						'Ajouter votre adresse de livraison
 					
 					
 			.adresse.large-6.medium-6.small-12.borderleft.columns
 				= render 'connect/adressefacturation'
 				.allselection
-					= link_to "/card/addadresse" do	
+					= link_to "/connect/addadresse" do	
 						'Ajouter votre adresse de livraison
 
 = render 'global/reassurance'

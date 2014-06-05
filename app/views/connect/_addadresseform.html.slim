@@ -1,49 +1,50 @@
 
-.bloc_form
-	.field	
-		label.columns
-			| Civilité :
-	      	select required=""
-				option value="Monsieur"  Monsieur
-				option value="Madame"  Madame
-				option value="Mademoiselle"  Mademoiselle
-	    small.error email obligatoire
+form.large-12.left data-abide=""
+	.bloc_form
+		.field	
+			label.columns
+				| Civilité :
+		      	select required=""
+					option value="Monsieur"  Monsieur
+					option value="Madame"  Madame
+					option value="Mademoiselle"  Mademoiselle
+		    small.error email obligatoire
 
-    .field.large-6.columns
-	    label
-	      	| Votre Nom :
-	      	input pattern="[a-zA-Z]+" required="" type="text"
-	    small.error Nom obligatoire
-	
-	.field.large-6.columns    
-	    label
-	      	| Votre prénom :
-	      	input pattern="[a-zA-Z]+" required="" type="text"
-	    small.error Prénom obligatoire
+	    .field.large-6.columns
+		    label
+		      	| Votre Nom :
+		      	input pattern="[a-zA-Z]+" required="" type="text"
+		    small.error Nom obligatoire
+		
+		.field.large-6.columns    
+		    label
+		      	| Votre prénom :
+		      	input pattern="[a-zA-Z]+" required="" type="text"
+		    small.error Prénom obligatoire
 
-    .field.columns
-		label
-			| Adresse :
-	      	input type="text"
-      	small.error Adresse obligatoire
-	.field.columns    
-	    label
-	      	| Complément d'adresse :
-	      	input type="text" 
-	.field.columns.large-6    
-	    label
-	      	| Code postal :
-	      	input data-invalid="" type="text" 
-      	small.error Code postale obligatoire
-    .field.columns.large-6  	
-      	label
-	      	| Ville :
-	      	input data-invalid="" type="text" 
-      	small.error Ville obligatoire
-    .field.columns.large-6.left 	
-      	label
-	      	| Pays :
-	      	input data-invalid="" type="text"
-		small.error Pays obligatoire 
-    
-.clear
+	    .field.columns
+			label
+				| Adresse :
+		      	input type="text"
+	      	small.error Adresse obligatoire
+		.field.columns    
+		    label
+		      	| Complément d'adresse :
+		      	input type="text" 
+		.field.columns.large-6    
+		    label
+		      	| Code postal :
+		      	input data-invalid="" type="text" 
+	      	small.error Code postale obligatoire
+	    .field.columns.large-6  	
+	      	label
+		      	| Ville :
+		      	input data-invalid="" type="text" 
+	      	small.error Ville obligatoire
+	    .field.columns.large-6.left 	
+	      	label
+		      	| Pays :
+		      	input data-invalid="" type="text"
+			small.error Pays obligatoire 
+	    
+    .clear

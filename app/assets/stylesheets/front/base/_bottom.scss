@@ -51,11 +51,11 @@ button, .button {
 
 
 /* Voir le produit */
-.accessproduct { background-color: $red;
+.accessproduct { background-color: $red;padding:5px!important;
   a { text-transform: uppercase!important; }  
 }
 
-.accessproduct:hover { background-color: $upred; @include transition; }
+.accessproduct:hover { background-color: $upred!important; @include transition; }
 
 
 /* Voir tous les producteurs */

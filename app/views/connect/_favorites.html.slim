@@ -4,7 +4,7 @@
 			.product 
 				a href="/product/pageproduct"
 				    .image_prix
-			      		= image_tag "produit-3.jpg"
+			      		= image_tag "product/produit-3.jpg"
 						.prix
 							span 59€95
 							.clear
@@ -15,9 +15,8 @@
 						p Producteur :
 						span.nom
 							'Calcia
-					.label
-			      	.button.accessproduct
-						span Voir le produit
+					.cross
+						= image_tag "cross.png"
 					.clear
 			
 					
@@ -25,21 +24,15 @@
 			.product 
 				= link_to "#" do
 				    .image_prix
-			      		= image_tag "produit-2.jpg"
+			      		= image_tag "product/cle_usb_bio.jpg"
 						.prix
 							span 59€95
 							.clear
 					.desc 
-						p Radio solaire Scorpion
-						span Orange ETON
-					.producteur
-						p Producteur :
-						span.nom
-							'Calcia
-					.label
-						= image_tag "label-limite.png"
-			      	.button.accessproduct
-						span Voir le produit
+						p Clé USB
+						span Fibre de maïs
+					.cross
+						= image_tag "cross.png"
 					.clear
 						
 			
