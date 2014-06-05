@@ -7,11 +7,11 @@
           'Titre
           br
           = actu.name
-          / =' link_to 'Supprimer', admin_actu_path(actu), method: :delete
         li
           'Description
           br
           = actu.description
+        / =' link_to 'Modifier', admin_actu_path(actu), method: :edit
         =' link_to 'Supprimer', admin_actu_path(actu), method: :delete
 
 
