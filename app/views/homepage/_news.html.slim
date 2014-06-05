@@ -1,12 +1,12 @@
 #home-actu
-	.row
+	.row data-equalizer=""
 		.titreh2
 				.fondblanc
 					h2.text-center L'actu responsable
 	    - Actu.all.in_groups_of(3, false).each do |actus|
 		    ul.large-block-grid-3.medium-block-grid-3.small-block-grid-1.listactu
 		    	- actus.each do |actu|
-			    	li
+			    	li data-equalizer-watch=""
 			    		.actu
 			    			span.date
 			    				= actu.created_at.strftime("%d/%m/%Y")
