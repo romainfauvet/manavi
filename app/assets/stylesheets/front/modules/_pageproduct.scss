@@ -110,3 +110,17 @@
 .block_producers.pageproduct {
   margin-top:20px;
 }
+
+
+
+/*miniature*/
+#image{
+  .zoomWrapper {
+    position:relative!important;
+  }
+  #gallery_miniature img{
+    width:60px;
+    float:left;
+    border:solid 1px #e1dddb;
+  }
+}

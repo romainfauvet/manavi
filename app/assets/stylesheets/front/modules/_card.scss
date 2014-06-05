@@ -1,0 +1,51 @@
+.listcard {
+  border-left:none!important;
+  .cbp-vm-view-list .image_prix img {
+    width:7%;
+  }
+  .button.accessproduct {
+    background:$grey_light;
+    width:15%;
+    padding:5px!important;
+    span {
+      color:#333333;
+      font-size:13px;
+    }
+  }  
+}
+
+.command {
+  margin-bottom:30px;
+  .totalprice p {
+    font-size:35px;
+    margin-bottom:10px;
+    color:$red;
+    span {
+      font-size:13px;
+      color:$grey;
+    }
+  }
+  p {
+    text-align:right;
+    span {
+      color:$red;
+    }
+  }
+}
+
+.listcard.pagelist {
+  margin-bottom:20px;
+}
+
+
+/*LIVRAISON*/
+.adresse {
+  margin-bottom:30px;
+  span {
+    display:block;
+  }
+  .allselection {
+    float:left;
+  }
+}
+

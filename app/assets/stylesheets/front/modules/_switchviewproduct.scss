@@ -1,8 +1,8 @@
 .pagelist {
-  border-left:solid 1px #D5D5D5;
   padding:0 6px!important;
+  margin-bottom:30px;
   .cbp-vm-switcher {
-    margin-top:-42px;
+    /*margin-top:-42px;*/
   }
 }
 
@@ -171,7 +171,7 @@
     .desc span {
       color:$white;
     }
-  } 
+  }
 }
 
 
@@ -268,6 +268,10 @@
   }
   p {
     margin:0;
+  }
+  .quantity {
+    width:10%;
+    float:left;
   }
 }
 

@@ -1,0 +1,49 @@
+.block_producers.pageproduct
+	.row
+		.information
+			.titreh2
+				.fondblanc
+					h2.text-center Produits
+			#cbp-vm.cbp-vm-switcher.cbp-vm-view-grid
+				ul.list.large-block-grid-6.medium-block-grid-3.small-block-grid-2
+					li
+						.product
+							a href="/product/pageproduct"
+							    .image_prix
+						      		= image_tag "produit-1.jpg"
+									.prix
+										span 120€
+									.clear
+								.desc
+									p Radio solaire Scorpion
+									span Orange ETON
+								.producteur
+									p Producteur :
+									span.nom
+										'Calcia
+								.label
+						      	.button.accessproduct
+									span Voir le produit
+								.clear
+		
+		
+					li
+						.product
+							= link_to "#" do
+							    .image_prix
+						      		= image_tag "produit-2.jpg"
+									.prix
+										span 15455€
+									.clear
+								.desc
+									p Radio solaire Scorpion
+									span Orange ETON
+								.producteur
+									p Producteur :
+									span.nom
+										'Calcia
+								.label
+									= image_tag "label-limite.png"
+						      	.button.accessproduct
+									span Voir le produit
+								.clear

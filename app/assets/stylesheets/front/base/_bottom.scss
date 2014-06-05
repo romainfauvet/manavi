@@ -1,3 +1,10 @@
+@mixin box_shaow_light {
+  box-shadow: 1px 0px 0px 0px rgba(119, 119, 119, 0.05), 0px 1px 0px 0px rgba(119, 119, 119, 0.1), 0px -1px 0px 0px rgba(119, 119, 119, 0.15), -1px 0px 0px 0px rgba(119, 119, 119, 0.20);
+  -moz-box-shadow: 1px 0px 0px 0px rgba(119, 119, 119, 0.05), 0px 1px 0px 0px rgba(119, 119, 119, 0.1), 0px -1px 0px 0px rgba(119, 119, 119, 0.15), -1px 0px 0px 0px rgba(119, 119, 119, 0.20);
+  -webkit-box-shadow: 1px 0px 0px 0px rgba(119, 119, 119, 0.05), 0px 1px 0px 0px rgba(119, 119, 119, 0.1), 0px -1px 0px 0px rgba(119, 119, 119, 0.15), -1px 0px 0px 0px rgba(119, 119, 119, 0.20);
+}
+
+
 /* padding standard */
 $padding: 5px;
 $padding-medium: ($padding*2);
@@ -12,26 +19,17 @@ $padding-big: ($padding-medium*2);
 transition: background .2s ease-in;
 }
 
-.defaultbottom {    
-    a{
-      padding:5px 10px;
-      background:$red;
-      @include transition;
-      color:$white;
-    }
-    a:hover {
-      background:$upred;
-    }
-}
+
 
 /*bouton dans formulaire*/
-button {
-  padding:5px 10px;
+.button {
+  padding:10px 15px!important;
   background:$red;
   @include transition;
   color:$white;
+  width:auto;
 }
-button:hover {
+.button:hover {
   background:$upred;
 }
 
@@ -63,7 +61,7 @@ button:hover {
 
 
 /* Voir tous les produits */
-.allselection { background: url('bullet.gif') center left no-repeat ; padding-left: 12px; float: right;margin-right:10px;margin-top: 10px;
+.allselection { background: url('bullet.gif') center left no-repeat ; padding-left: 12px; float: right;margin-top: 10px;
   a { color: $brown; text-decoration: underline;}
   a:hover { color: $upbrown;  @include transition;}
 }
@@ -92,4 +90,44 @@ button:hover {
   padding:5px 10px;
   color:$white;
   }
+}
+
+
+/*COMMANDER*/
+.bigbutton {
+  width:auto!important;
+  a {
+    text-transform:uppercase;
+    font-size:20px;
+  }  
+}
+
+
+.btnwhite {
+  width:auto!important;
+  background:$white;
+  @include box_shaow_light;
+  margin-right:10px;
+  a {
+    color:$red;
+  }
+}
+.btnwhite:hover {
+  background:$grey_light;
+}
+
+select {
+  cursor:pointer;
+}
+
+.defaultbottom {    
+    padding: 10px 15px !important;
+    background:$red;
+    @include transition;
+    color:$white;
+    text-transform:uppercase;
+    font-size:20px;  
+}
+.defaultbottom:hover {
+      background:$upred;
 }

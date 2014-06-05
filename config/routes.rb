@@ -11,8 +11,18 @@ Manavi::Application.routes.draw do
   get '/pages/*actus/:id', to: 'pages#show'
   get 'listproduct/listproduct' => 'listproduct#listproduct'
   get 'product/pageproduct' => 'product#pageproduct'
+  get 'company/company' => 'company#company'
   get 'connect/login' => 'connect#login'
   get 'connect/myaccount' => 'connect#myaccount'
+  get 'actunew/listactu' => 'actunew#listactu'
+  get 'actunew/actu' => 'actunew#actu'
+  get 'card/card' => 'card#card'
+  get 'card/coordonnee' => 'card#coordonnee'
+  get 'card/livraison' => 'card#livraison'
+  get 'card/paiement' => 'card#paiement'
+  get 'card/confirmation' => 'card#confirmation'
+  get 'listproducer/listproducer' => 'listproducer#listproducer'
+  get 'producer/pageproducer' => 'producer#pageproducer'
 
   namespace :admin do
     root "dashboard#index"

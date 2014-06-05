@@ -1,0 +1,56 @@
+ul.listactu {
+  margin:0;
+  padding:0;
+  li {
+    list-style:none;
+    margin:10px 0;
+    background:$white;
+    @include box_shaow_light;
+    padding:6px;
+    .actu {
+      h4 {
+        color:$red;
+      }
+      .date {
+        font-size:0.8em;
+        color:$grey;
+        display:block;
+      }
+      img {
+        float:left;
+        margin:10px 10px 10px 0;
+      }
+      a {
+        float:right;
+        background:$beige;
+        color:$white;
+        padding:5px 8px;
+        font-size:0.8em;
+        @include font_titre;
+      }
+    }
+    .padding {
+      padding-bottom:10px;
+    }
+  }
+}
+
+
+
+#home-actu{
+  background:#E9E8E7;
+  padding:20px 0;
+  .fondblanc {
+    h2 {
+      background:#E9E8E7;
+    }
+  }
+}
+
+.pagelist .listactu {
+  margin-left: 8px;
+  li {
+    margin:0 0 10px 0;
+  }
+}
+

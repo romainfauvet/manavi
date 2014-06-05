@@ -6,22 +6,6 @@
   margin-bottom:30px;
 }
 
-.titreh2 {
-  background:image-url('bg_h2.gif') center repeat-x;
-  .fondblanc {
-    text-align:center;
-    margin-bottom:15px;
-    h2 {
-      display:inline;
-      margin:auto;
-      background:#F0F0F0;
-      padding:0 10px;
-      color:$red;
-      @include font_titre;
-      text-transform:uppercase;
-    }
-  }
-}
 
 ul.list {
   padding:0;
@@ -29,7 +13,7 @@ ul.list {
   li {
     list-style:none;
     position:relative;
-    margin:20px 0;
+    /*margin:20px 0;*/
     .label {
       background:none;
       position:absolute;

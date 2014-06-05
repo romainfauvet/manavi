@@ -4,7 +4,7 @@
 				.fondblanc
 					h2.text-center L'actu responsable
 	    - Actu.all.in_groups_of(3, false).each do |actus|
-		    ul.large-block-grid-3.medium-block-grid-3.small-block-grid-1
+		    ul.large-block-grid-3.medium-block-grid-3.small-block-grid-1.listactu
 		    	- actus.each do |actu|
 			    	li
 			    		.actu
@@ -12,9 +12,9 @@
 			    			= image_tag "art1.jpg"
 			    			h4
 			    				= actu.name
-			    			p
+			    			.text
 			    				= actu.description
-							.button.read
+							.button.read.right
 								a href="#"
 									'Lire la suite ...
 							.clear
