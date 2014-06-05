@@ -1,0 +1,34 @@
+= render 'global/header'
+.myaccount.sansariane
+	.row
+		.sidebar.large-3.columns
+			= render 'connect/sidebarmyaccount'
+			= render 'global/sidebarservice'
+		.large-9.columns
+			.titreh2
+				.fondblanc
+					h2.text-center Changer mon mot de passe
+
+			.row	
+				.signup.large-12.columns
+					form.large-12.right data-abide="" 
+						.password-field.columns
+						    label
+						      | Votre mot de passe actuelle :
+						      input pattern="[a-zA-Z]+" required="" type="email" 
+						    small.error Mot de passe obligatoire
+					  	.password-field.columns
+						    label
+						      | Votre nouveau mot de passe :
+						      input required="" type="password" 
+						    small.error Mot de passe obligatoire
+					    .password-field.columns
+						    label
+						      | Confirmer votre nouveau mot de passe :
+						      input required="" type="password" 
+						    small.error Mot de passe obligatoire
+						    
+					  	button.defaultbottom.right type="submit" Enregistrer
+			  			
+= render 'global/newsletter_reseaux'
+= render 'global/footer'

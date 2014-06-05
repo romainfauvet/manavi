@@ -22,6 +22,10 @@ transition: background .2s ease-in;
 
 
 /*bouton dans formulaire*/
+button, .button {
+  background:$red!important;
+  border:$white!important;
+}
 .button {
   padding:10px 15px!important;
   background:$red;
@@ -47,11 +51,11 @@ transition: background .2s ease-in;
 
 
 /* Voir le produit */
-.accessproduct { background-color: $red;
+.accessproduct { background-color: $red;padding:5px!important;
   a { text-transform: uppercase!important; }  
 }
 
-.accessproduct:hover { background-color: $upred; @include transition; }
+.accessproduct:hover { background-color: $upred!important; @include transition; }
 
 
 /* Voir tous les producteurs */
@@ -68,9 +72,9 @@ transition: background .2s ease-in;
 
 
 /* Lire la suite */
-.read { @include transition; width:auto; padding:0; text-align:right;margin-bottom: 4px;}
-.read a { background: $red; color:$white; padding:5px 8px;}
-.read a:hover { background: $upred;}
+.read { @include transition; background:$beige!important; width:auto; padding:0; text-align:right;margin-bottom: 4px;}
+.read a { color:$white; padding:5px 8px;}
+.read:hover { background: $brown!important;}
 
 
 
@@ -105,7 +109,7 @@ transition: background .2s ease-in;
 
 .btnwhite {
   width:auto!important;
-  background:$white;
+  background:$white!important;
   @include box_shaow_light;
   margin-right:10px;
   a {
@@ -113,7 +117,7 @@ transition: background .2s ease-in;
   }
 }
 .btnwhite:hover {
-  background:$grey_light;
+  background:$grey_light!important;
 }
 
 select {
@@ -126,7 +130,10 @@ select {
     @include transition;
     color:$white;
     text-transform:uppercase;
-    font-size:20px;  
+    font-size:20px;
+    a {
+      color:$white;
+    }  
 }
 .defaultbottom:hover {
       background:$upred;

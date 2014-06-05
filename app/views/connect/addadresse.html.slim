@@ -1,0 +1,18 @@
+= render 'global/header'
+.myaccount.sansariane
+	.row
+		.sidebar.large-3.columns
+			= render 'connect/sidebarmyaccount'
+			= render 'global/sidebarservice'
+		.large-9.columns
+			.titreh2
+				.fondblanc
+					h2.text-center Ajouter une adresse	
+			
+			= render 'connect/addadresseform'
+			button.defaultbottom.right type="submit" 
+		  		= link_to "/connect/carnetadresse" do
+		  			'Ajouter l'adresse
+
+= render 'global/reassurance'
+= render 'global/footer'

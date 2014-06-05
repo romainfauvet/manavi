@@ -1,24 +1,14 @@
 = render 'global/header'
-.myaccount
-	= render 'connect/numberaccount'
+.myaccount.sansariane
 	.row
 		.sidebar.large-3.columns
 			= render 'connect/sidebarmyaccount'
-			= render 'connect/sidebarservice'
+			= render 'global/sidebarservice'
 		.large-9.columns
-
-			h2 Mes coordonées
-			p Les champs marqué d'un * sont obligatoire	
-
-
-
-
-
-
-
-
-
-
+			.titreh2
+				.fondblanc
+					h2.text-center Mes coordonnées
+			= render 'connect/coordonnee'
 
 = render 'global/newsletter_reseaux'
 = render 'global/footer'

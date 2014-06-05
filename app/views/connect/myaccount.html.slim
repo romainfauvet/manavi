@@ -1,14 +1,19 @@
 = render 'global/header'
-.myaccount
-	= render 'connect/numberaccount'
+.myaccount.sansariane
 	.row
 		.sidebar.large-3.columns
 			= render 'connect/sidebarmyaccount'
 			= render 'global/sidebarservice'
 		.large-9.columns
+			.titreh2
+				.fondblanc
+					h2.text-center Mon compte
 			= render 'connect/welcome'
 			= render 'connect/command'
-			= render 'connect/favorites'
+			.margin	
+				.myaccountfarorites
+					h2 Mes favoris
+					= render 'connect/favorites'
 
 = render 'global/newsletter_reseaux'
 = render 'global/footer'

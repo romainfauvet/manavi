@@ -5,9 +5,21 @@
 		.fondblanc
 			h2.text-center Livraison
 
-.row	
-  	= render 'card/adresselivraison'
-	= render 'card/adressefacturation'
+.row
+	.adresse.large-6.medium-6.small-12.columns
+	  	= render 'connect/adresselivraison'
+	  	.allselection
+			= link_to "/card/addadresse" do	
+				'Ajouter votre adresse de livraison
+			
+			
+	.adresse.large-6.medium-6.small-12.borderleft.columns
+		= render 'connect/adressefacturation'
+		.allselection
+			= link_to "/card/addadresse" do	
+				'Ajouter votre adresse de livraison
+			
+			
 = render 'card/buttonpaiement'
 
 = render 'global/reassurance'
