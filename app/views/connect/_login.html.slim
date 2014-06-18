@@ -1,16 +1,16 @@
 .login.large-4.columns
 	h2.large-12.right Se connecter
-	form.large-12.right data-abide="" 
+	form.large-12.right data-abide=""
 		.name-field
 		    label
 		      | Votre email :
-		      input pattern="[a-zA-Z]+" required="" type="email" 
+		      input pattern="[a-zA-Z]+" required="" type="email"
 		    small.error email obligatoire
 	  	.email-field
 		    label
 		      | Votre mot de passe :
-		      input required="" type="password" 
+		      input required="" type="password"
 		    small.error Mot de passe obligatoire
 	  	button.defaultbottom.right type="submit"
-	  		= link_to "/connect/myaccount" do	
+	  		= link_to "/connect/myaccount" do
 	  			'Se connecter
