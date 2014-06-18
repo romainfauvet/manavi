@@ -51,6 +51,8 @@ gem 'simple_form'
 gem 'devise'
 gem 'cancan'
 gem 'foundation-rails'
+gem 'compass'
+gem 'haml'
 
 group :development do
   gem "better_errors"
