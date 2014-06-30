@@ -1,18 +1,17 @@
-.margin	
+.margin
 	h3 Information personnel :
-	p Monsieur Jérémy Pairis
-	p pairis.jeremy@gmail.com
-	
+	p #{current_user.gender} #{current_user.firstname} #{current_user.name}
+	p #{current_user.email}
+
 	h3 Téléphone :
-	p Tel fixe : 03 80 51 89 76
-	p Tel portable : 06 78 98 09 88
-	
+	p Tel fixe : #{current_user.phone}
+	p Tel portable : #{current_user.mobile}
+
 	h3 Adresse postale
-	p 152 rue de Général de Gaulle
-	p 21110 Tart-le-Bas
-	p France
-	
+	p #{current_user.address} #{current_user.address2}
+	p #{current_user.zipcode} #{current_user.city}
+	p #{current_user.country}
+
 	.allselection.left
-		= link_to "/connect/updateadresse" do	
+		= link_to "/connect/updateadresse" do
 			'Modifier vos coordonnées
-	

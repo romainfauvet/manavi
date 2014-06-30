@@ -1,80 +1,88 @@
 header
-	.row.toptop
-		nav.top-bar data-topbar=""
-			section.top-bar-section
-				.logo.left.show-for-large-up
-					a href="/"
-			    		= image_tag "logo_manavi.jpg"
-				h1.left.show-for-large-up
-					a href="/"
-						= image_tag "manavi.png"
-					  	span
-					  		'Développons l'esprit responsable
+  .row.toptop
+    nav.top-bar data-topbar=""
+      section.top-bar-section
+        .logo.left.show-for-large-up
+          a href="/"
+            = image_tag "logo_manavi.jpg"
+        h1.left.show-for-large-up
+          a href="/"
+            = image_tag "manavi.png"
+              span
+                'Développons l'esprit responsable
 
-		        .nav_right.right.large-6.small-12
-				    ul.right
-				      li.large-3.medium-3.small-6.columns
-				      	.blanc
-					      	a href= "/company/company"
-					          = image_tag "nav_societe.png"
-					          span
-					          	'La société
-			      	  li.large-3.medium-3.small-6.columns
-			      	  	.blanc
-						    a href= "/actunew/listactu"
-							  = image_tag "nav_actu.png"
-					          span
-					          	'L'actu
-					  li.large-3.medium-3.small-6.columns.red
-					  	.red
-					        a href= "/connect/login"
-					          = image_tag "nav_compte.png"
-					          span
-					          	'Mon compte
-				      li.large-3.medium-3.small-6.columns.red
-				      	.red
-					        a href= "/card/card"
-					          = image_tag "nav_panier.png"
-					          span
-					          	'Mon panier
-	.papier data-magellan-expedition="fixed"
-	  nav.top-bar.row data-topbar=""
-	    ul.title-area.large-2
-	    	li.logo.left
-	      		a href="/"
-	      			= image_tag "logo_manavi_hori.png"
-	    	li.toggle-topbar.menu-icon
-				  a href="#"
-				    span Menu
-	    section.top-bar-section
-		  	ul.left.large-7
-			   	li.has-dropdown.relative
-					a href="#" Les produits
-					- Category.where(parent_id: nil).in_groups_of(20, false).each do |categories|
-					    ul.dropdown
-					      - categories.each do |category|
-					        li.has-dropdown
-					          a href= "#"
-					            = category.name
-					          - category.children.in_groups_of(20, false).each do |children|
-					            ul.dropdown
-					              - children.each do |child|
-					                li.has-dropdown
-					                  a href= "#"
-					                    = child.name
-					                  - child.children.in_groups_of(20, false).each do |children|
-					                  	ul.dropdown
-									          	  - children.each do |child|
-									          	    li
-									          	      a href= "/listproduct/listproduct"
-									          	        = child.name
-	        	li
-		          a href= "/listproducer/listproducer"
-		            'Les producteurs
+        .nav_right.right.large-6.small-12
+          ul.right
+            li.large-3.medium-3.small-6.columns
+              .blanc
+                a href= "/company/company"
+                  = image_tag "nav_societe.png"
+                  span
+                    'La société
+            li.large-3.medium-3.small-6.columns
+              .blanc
+                a href= "/actunew/listactu"
+                  = image_tag "nav_actu.png"
+                  span
+                    'L'actu
+            li.large-3.medium-3.small-6.columns.red
+              .red
+                - if user_signed_in?
+                  a href= "/connect/myaccount"
+                    = image_tag "nav_compte.png"
+                    span
+                      = link_to 'Se déconnecter', destroy_user_session_path, method: :delete
+                - else
+                  a href= "/users/sign_in"
+                    = image_tag "nav_compte.png"
+                    span
+                      'Mon compte
+            li.large-3.medium-3.small-6.columns.red
+              .red
+                a href= "/card/card"
+                  = image_tag "nav_panier.png"
+                  span
+                    'Mon panier
 
-			.has-form.right.large-3.medium-3.small-12
-				.row.collapse
-				    .large-10.medium-10.small-10.columns
-				      	input placeholder=("rechercher") type="text"
-				    .large-2.medium-2.small-2.columns
-				      	a.alert.button.expand href="#"  Ok
+  .papier data-magellan-expedition="fixed"
+    nav.top-bar.row data-topbar=""
+      ul.title-area.large-2
+        li.logo.left
+          a href="/"
+            = image_tag "logo_manavi_hori.png"
+        li.toggle-topbar.menu-icon
+          a href="#"
+            span Menu
+
+      section.top-bar-section
+        ul.left.large-7
+          li.has-dropdown.relative
+            a href="#" Les produits
+            - Category.where(parent_id: nil).in_groups_of(20, false).each do |categories|
+                ul.dropdown
+                  - categories.each do |category|
+                    li.has-dropdown
+                      a href= "#"
+                        = category.name
+                      - category.children.in_groups_of(20, false).each do |children|
+                        ul.dropdown
+                          - children.each do |child|
+                            li.has-dropdown
+                              a href= "#"
+                                = child.name
+                              - child.children.in_groups_of(20, false).each do |children|
+                                ul.dropdown
+                                  - children.each do |child|
+                                    li
+                                      a href= "/listproduct/listproduct"
+                                        = child.name
+          li
+            a href= "/listproducer/listproducer"
+              'Les producteurs
+
+      .has-form.right.large-3.medium-3.small-12
+        .row.collapse
+          .large-10.medium-10.small-10.columns
+              input placeholder=("rechercher") type="text"
+          .large-2.medium-2.small-2.columns
+              a.alert.button.expand href="#"  Ok

@@ -1,0 +1,24 @@
+= render 'global/header'
+.row
+  .login.large-4.columns
+    h2.large-12.right Se connecter
+    = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), class: 'large-12 right') do |f|
+      .name-field
+        label
+          | Votre email :
+          = f.input :email, :required => false, :autofocus => true, label: false
+          / small.error email obligatoire
+      .email-field
+        label
+          | Votre mot de passe :
+          = f.input :password, :required => false, label: false
+          / small.error Mot de passe obligatoire
+      = f.button :submit, "Se connecter", class: 'defaultbottom right'
+
+      = render "devise/shared/links"
+
+  .signup.borderleft.large-8.columns
+    = render "devise/registrations/form"
+
+= render 'global/newsletter_reseaux'
+= render 'global/footer'

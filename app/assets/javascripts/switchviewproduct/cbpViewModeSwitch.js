@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
@@ -24,7 +24,7 @@
 
 	function _switch( opt ) {
 		// remove other view classes and any any selected option
-		optionSwitch.forEach(function(el) { 
+		optionSwitch.forEach(function(el) {
 			classie.remove( container, el.getAttribute( 'data-view' ) );
 			classie.remove( el, 'cbp-vm-selected' );
 		});

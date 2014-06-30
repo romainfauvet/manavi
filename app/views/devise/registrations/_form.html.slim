@@ -1,0 +1,83 @@
+h2.columns S'inscrire
+= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), class: 'large-12 form left form') do |f|
+
+  .bloc_form
+    p.columns Informations personnelles
+    .field
+      label.columns
+        | Civilité :
+        = f.select :gender, ["Monsieur", "Madame", "Mademoiselle"], label: false
+        / small.error Civilité obligatoire
+
+
+      .field.large-6.columns
+        label
+          | Votre nom :
+          = f.input :name, :required => true, label: false
+          / small.error Nom obligatoire
+
+      .field.large-6.columns
+        label
+          | Votre prénom :
+          = f.input :firstname, :required => true, label: false
+          / small.error Prénom obligatoire
+
+      .field.columns
+        label
+          | Votre email :
+          = f.input :email, :required => true, label: false
+          / small.error Email obligatoire
+      .password-field.columns
+        label
+          | Mot de passe :
+          = f.input :password, :required => true, label: false
+          / small.error Mot de passe obligatoire
+      .password-field.columns
+        label
+          | Confirmer votre mot de passe :
+          = f.input :password_confirmation, :required => true, label: false
+          / small.error Mot de passe obligatoire
+
+
+  .bloc_form
+    p.columns Coordonnées
+    .field.columns.large-6
+      label
+        | Téléphone fixe :
+        = f.input :phone, :required => true, label: false
+    .field.columns.large-6
+      label
+        | Téléphone portable :
+        = f.input :mobile, :required => true, label: false
+
+  .bloc_form
+    p.columns Adresse postale
+    .field.columns
+      label
+        | Adresse :
+        = f.input :address, :required => true, label: false
+        / small.error Adresse obligatoire
+    .field.columns
+      label
+        | Complément d'adresse :
+        = f.input :address2, :required => true, label: false
+    .field.columns.large-6
+      label
+        | Code postal :
+        = f.input :zipcode, :required => true, label: false
+        / small.error Code postale obligatoire
+    .field.columns.large-6
+      label
+        | Ville :
+        = f.input :city, :required => true, label: false
+        / small.error Ville obligatoire
+    .field.columns.large-6.left
+      label
+        | Pays :
+        = f.input :country, :required => true, as: :string, label: false
+        / small.error Pays obligatoire
+
+  .clear
+  = f.button :submit, "S'inscrire", class: 'buttondefaultbottom right'
+
+  = render "devise/shared/links"
