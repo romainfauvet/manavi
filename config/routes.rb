@@ -36,6 +36,8 @@ Manavi::Application.routes.draw do
   get 'listproducer/listproducer' => 'listproducer#listproducer'
   get 'producer/pageproducer' => 'producer#pageproducer'
   
+  get 'backoffice/index' => 'backoffice#index'
+  
   
   namespace :admin do
     root "dashboard#index"
