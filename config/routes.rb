@@ -37,6 +37,9 @@ Manavi::Application.routes.draw do
   get 'producer/pageproducer' => 'producer#pageproducer'
   
   get 'backoffice/index' => 'backoffice#index'
+  get 'backoffice/command' => 'backoffice#command'
+  get 'backoffice/product' => 'backoffice#product'
+  get 'backoffice/addproduct' => 'backoffice#addproduct'
   
   
   namespace :admin do

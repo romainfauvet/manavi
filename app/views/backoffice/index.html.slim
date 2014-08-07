@@ -1,6 +1,128 @@
 = render 'backoffice/header'
-= render 'backoffice/sidebar'
 
 .content_backoffice	
-	= render 'backoffice/product'
-	= render 'backoffice/category'
+	
+	
+	h1 Tableau de bord	
+	
+	.large-6.columns
+		h2 Les 5 dernières commandes
+		table
+			tr
+				th
+					'Client
+				th
+					'Article ( nombre )
+				th
+					'Montant global ( € )
+			
+			tr
+				td
+					'Elise Harris
+				td
+					'2
+				td
+					'120
+			tr
+				td
+					'Manon Yilo
+				td
+					'1
+				td
+					'10
+			tr
+				td
+					'Ahri Julien
+				td
+					'4
+				td
+					'123
+			tr
+				td
+					'Julie Smith
+				td
+					'1
+				td
+					'15,60
+			tr
+				td
+					'Paul Boulanger
+				td
+					'1
+				td
+					'2,88
+
+
+	.large-6.columns
+		h2 Meilleurs ventes
+		table
+			tr
+				th
+					'Nom
+				th
+					'Prix ( € )
+				th
+					'Quantité commandés
+			
+			tr
+				td
+					'Ciment super
+				td
+					'2,60
+				td
+					'650
+			tr
+				td
+					'Filtre à évier
+				td
+					'37
+				td
+					'544
+			tr
+				td
+					'Lait nettoyant
+				td
+					'8,45
+				td
+					'536
+			tr
+				td
+					'Oreiller
+				td
+					'96,75
+				td
+					'412
+			tr
+				td
+					'Panneau solaire
+				td
+					'375,34
+				td
+					'218
+					
+					
+	.large-6.columns.left
+		h2 Nouveaux clients
+		table
+			tr
+				td
+					'Paul Boulanger
+				td
+					'1
+				td
+					'2,88
+			tr
+				td
+					'Ahri Julien
+				td
+					'4
+				td
+					'123
+			tr
+				td
+					'Julie Smith
+				td
+					'1
+				td
+					'15,60
+			

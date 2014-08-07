@@ -1,9 +1,55 @@
 .header_backoffice
-	.left
-		= image_tag "manavi.png"		
-		
-	.right
-		a href= "/"
-			'Se déconnecter
-	.clear
+	.header_backoffice_top
+		.left
+			= image_tag "manavi-white.png"		
+			
+		.right
+			a href= "/"
+				'Se déconnecter
+		.clear
+	.header_backoffice_nav
+		ul
+			li			
+				a href= "/backoffice/index"	
+					span
+						'Tableau de bord				
+	
+			li			
+				span
+					'Ventes				
+				ul
+					li
+						a href= "/backoffice/command"
+							'Commandes
+					li	
+						a href= "#"
+							'Retours
+			
+			li			
+				span
+					'Catalogue				
+				ul
+					li
+						a href= "/backoffice/product"
+							'Gérer les produits
+					li
+						a href= "#"
+							'Gérer les catégories
+					li
+						a href= "#"
+							'Attributs
+					li
+						a href= "#"
+							'Gestion de la réecriture d'URL
+							
+			li			
+				a href= "#"	
+					span
+						'Clients				
+							
+			li			
+				a href= "#"	
+					span
+						'Actualités				
+
 	

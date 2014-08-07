@@ -1,0 +1,54 @@
+= render 'backoffice/header'		
+
+= render 'backoffice/sidebarproduct'
+		
+
+.content_backoffice.marginleft	
+	
+	
+	h1.left Ajouter un produit
+	
+	.right
+		.button.supr
+			a href="#" Supprimer
+	.right
+		.button.add
+			a href="/backoffice/addproduct" Ajouter un produit
+	.clear
+
+	.tabs-content.vertical
+	  	#general.content.active
+	    	p Panel 1 content goes here.
+	 	#images.content
+	    	p Panel 2 content goes here.
+	  	#desc.content
+	   		p Panel 3 content goes here.
+	 	#caract.content
+	    	p Panel 4 content goes here.
+	    #category.content
+	    	p Panel 4 content goes here.
+    	#prod.content
+	    	p Panel 4 content goes here.
+    	#fiche.content
+	    	p Panel 4 content goes here.
+
+	<ul class="tabs vertical" data-tab>
+	  <li class="tab-title active"><a href="#panel1a">Tab 1</a></li>
+	  <li class="tab-title"><a href="#panel2a">Tab 2</a></li>
+	  <li class="tab-title"><a href="#panel3a">Tab 3</a></li>
+	  <li class="tab-title"><a href="#panel4a">Tab 4</a></li>
+	</ul>
+	<div class="tabs-content vertical">
+	  <div class="content active" id="panel1a">
+	    <p>Panel 1 content goes here.</p>
+	  </div>
+	  <div class="content" id="panel2a">
+	    <p>Panel 2 content goes here.</p>
+	  </div>
+	  <div class="content" id="panel3a">
+	    <p>Panel 3 content goes here.</p>
+	  </div>
+	  <div class="content" id="panel4a">
+	    <p>Panel 4 content goes here.</p>
+	  </div>
+	</div>
