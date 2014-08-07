@@ -27,7 +27,8 @@ $(function(){
       navigation_arrows: true,
       slide_number: false,
       bullets: false
-	}
+	},
+	tab: {toggleable: false}
   });  	
 });
 

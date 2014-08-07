@@ -10,45 +10,29 @@
 	
 	.right
 		.button.supr
-			a href="#" Supprimer
+			a href="#" Annuler
 	.right
 		.button.add
-			a href="/backoffice/addproduct" Ajouter un produit
+			a href="/backoffice/product" Sauvegarder
 	.clear
-
-	.tabs-content.vertical
-	  	#general.content.active
-	    	p Panel 1 content goes here.
-	 	#images.content
-	    	p Panel 2 content goes here.
-	  	#desc.content
-	   		p Panel 3 content goes here.
-	 	#caract.content
-	    	p Panel 4 content goes here.
-	    #category.content
-	    	p Panel 4 content goes here.
-    	#prod.content
-	    	p Panel 4 content goes here.
-    	#fiche.content
-	    	p Panel 4 content goes here.
-
-	<ul class="tabs vertical" data-tab>
-	  <li class="tab-title active"><a href="#panel1a">Tab 1</a></li>
-	  <li class="tab-title"><a href="#panel2a">Tab 2</a></li>
-	  <li class="tab-title"><a href="#panel3a">Tab 3</a></li>
-	  <li class="tab-title"><a href="#panel4a">Tab 4</a></li>
-	</ul>
-	<div class="tabs-content vertical">
-	  <div class="content active" id="panel1a">
-	    <p>Panel 1 content goes here.</p>
-	  </div>
-	  <div class="content" id="panel2a">
-	    <p>Panel 2 content goes here.</p>
-	  </div>
-	  <div class="content" id="panel3a">
-	    <p>Panel 3 content goes here.</p>
-	  </div>
-	  <div class="content" id="panel4a">
-	    <p>Panel 4 content goes here.</p>
-	  </div>
-	</div>
+	
+	#tabs	  
+		#general
+			= render 'backoffice/addproduct/general'
+	  	#images
+		    h3 Tab 2
+		    p Tab 2 content
+	  	#desc
+		    h3 Tab 3
+		    p Tab 3 content
+	  	#caract
+	    	h3 Tab 4
+   
+	  	#category
+	    	h3 Tab 2
+	    	p Tab 2 content
+	 	#prod
+	    	h3 Tab 3
+	   		p Tab 3 content
+	  	#fiche
+	    	h3 Tab 4

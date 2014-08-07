@@ -79,7 +79,7 @@ html {
 
 //SLIDEBAR
 .slidebar_backoffice {
-  .tabs.vertical {
+  #tabsnav {
     background:#e1dddb;
     width:250px;
     position:absolute;
@@ -106,6 +106,12 @@ html {
     }
     li:hover {
       background:#F0F0F0;
+    }
+  }
+  .active {
+    background:#F0F0F0;
+    a {
+      color:$red;
     }
   }
 }
