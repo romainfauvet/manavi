@@ -1,0 +1,44 @@
+= render 'backoffice/header'
+
+.content_backoffice	
+	
+	h1.left Ajouter une réécriture d'URL
+	
+	.right
+		.button.supr
+			a href="#" Annuler
+	.right
+		.button.add
+			a href="/backoffice/url" Sauvegarder
+	.clear
+	
+	.large-6.columns
+		h2 Type
+		.panel
+			select
+				option value="cate"  Pour la catégorie
+				option value="prod"  Pour le produit
+				option value="perso"  Personnalisé
+	.large-6.columns
+		h2 Rediriger
+		.panel
+			select
+				option value="permanante"  Permanante ( 301 )
+				option value="starbuck"  Autre ( 302 )
+				option value="starbuck"  Autre ( 302 )
+				option value="starbuck"  Autre ( 302 )
+	.large-6.columns
+		h2 Chemin de la requête
+		.panel
+			input type="text" /
+	
+	.large-6.columns
+		h2 Chemin cible
+		.panel
+			input type="text" /
+	        
+	
+	.large-12.columns
+		h2 Description
+		.panel
+			textarea placeholder="" 

@@ -1,0 +1,36 @@
+= render 'backoffice/header'
+
+.content_backoffice	
+	
+	h1.left Ajouter une catégories
+	
+	.right
+		.button.supr
+			a href="#" Annuler
+	.right
+		.button.add
+			a href="/backoffice/category" Sauvegarder
+	.clear
+	
+	
+	.large-12.columns
+		h2 Nom
+		.panel
+			input type="text" /
+	
+	.large-6.columns
+		h2 Catégorie parent
+		.panel
+			select
+				option value="brico"  Bricolage et extérieur
+				option value="home"  Maison et décoration
+				option value="home"  Hygiène et bien être
+	        
+	.large-6.columns
+		h2 Sous-atégorie parent
+		.panel
+			select
+				option value="husker"  Jardinage
+				option value="starbuck"  Energie solaire
+				option value="starbuck"  Animalerie
+				option value="starbuck"  Bricolage

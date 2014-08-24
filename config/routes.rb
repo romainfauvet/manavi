@@ -40,6 +40,10 @@ Manavi::Application.routes.draw do
   get 'backoffice/command' => 'backoffice#command'
   get 'backoffice/product' => 'backoffice#product'
   get 'backoffice/addproduct' => 'backoffice#addproduct'
+  get 'backoffice/category' => 'backoffice#category'
+  get 'backoffice/addcategory' => 'backoffice#addcategory'
+  get 'backoffice/url' => 'backoffice#url'
+  get 'backoffice/addurl' => 'backoffice#addurl'
   
   
   namespace :admin do

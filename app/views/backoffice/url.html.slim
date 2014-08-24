@@ -1,0 +1,46 @@
+= render 'backoffice/header'
+
+
+
+.content_backoffice	
+	
+	h1.left Gestion de la réécriture d'URL
+	
+	.right
+		.button.supr
+			a href="#" Supprimer
+	.right
+		.button.add
+			a href="/backoffice/addurl" Ajouter une réécriture d'URL
+	.clear
+
+	table
+		tr
+			th
+				input type="checkbox" name="cat" value="all sected"
+			th
+				'ID
+			th
+				'Type
+			th
+				'Chemin requête
+			th
+				'Chemin cible
+			th
+				'Action
+		
+		tr
+
+			td
+				input type="checkbox" name="cat" value="all sected"
+			td 
+				'152565
+			td
+				'Personnalisé
+			td
+				'manavi
+			td
+				'la-societe
+			td
+				a href="/backoffice/addurl"
+					'Editer
