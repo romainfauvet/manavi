@@ -1,0 +1,31 @@
+
+	
+= render 'backoffice/header'		
+
+= render 'backoffice/addclient/sidebarclient'
+		
+
+.content_backoffice.marginleft	
+	
+	
+	h1.left Ajouter un produit
+	
+	.right
+		.button.supr
+			a href="#" Annuler
+	.right
+		.button.add
+			a href="/backoffice/product" Sauvegarder
+	.clear
+	
+	#tabs	  
+		#info
+			= render 'backoffice/addclient/info'
+	  	#coordonnee
+		    = render 'backoffice/addclient/coordonnee'
+	  	#adress
+		    = render 'backoffice/addclient/adress'
+	  	#mdp
+	    	= render 'backoffice/addclient/mdp'   
+	  	#coordonneebancaire
+	    	= render 'backoffice/addclient/coordonneebancaire'

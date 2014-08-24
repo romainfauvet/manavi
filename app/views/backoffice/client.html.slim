@@ -1,0 +1,81 @@
+= render 'backoffice/header'
+
+
+
+.content_backoffice	
+	
+	h1.left Clients
+	.right
+		.button.add
+			a href="/backoffice/addclient" Ajouter un client
+	.clear
+	table
+		tr
+			th
+				'Id
+			th
+				'Nom
+			th
+				'Prenom
+			th
+				'Email
+			th
+				'Téléphone
+			th
+				'Adresse postal
+			th
+				'CP
+			th
+				'Ville
+			th
+				'Pays
+			th
+				'Action
+		
+		tr
+			td
+				'1545
+			td
+				'Smith
+			td
+				'Roger
+			td
+				'smith.roger@gmail.com
+			td
+				'06 55 60 12 78
+			td
+				'152 route de Lille
+				br Appartement 5
+			td
+				'59273 
+			td
+				'Villeneuve d'Ascq
+			td
+				'France
+			td
+				a href="/backoffice/seeclient"
+					'Voir
+		
+		tr
+			td
+				'6518
+			td
+				'Gynis
+			td
+				'Madeleine
+			td
+				'gynis.madeleine@msn.fr
+			td
+				'07 50 80 66 95
+			td
+				'12 route de Julion
+			td
+				'10245 
+			td
+				'Queis
+			td
+				'France
+			td
+				a href="/backoffice/seeclient"
+					'Voir
+		

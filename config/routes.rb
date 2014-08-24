@@ -38,12 +38,18 @@ Manavi::Application.routes.draw do
   
   get 'backoffice/index' => 'backoffice#index'
   get 'backoffice/command' => 'backoffice#command'
+  get 'backoffice/seecommand' => 'backoffice#seecommand'
   get 'backoffice/product' => 'backoffice#product'
   get 'backoffice/addproduct' => 'backoffice#addproduct'
   get 'backoffice/category' => 'backoffice#category'
   get 'backoffice/addcategory' => 'backoffice#addcategory'
   get 'backoffice/url' => 'backoffice#url'
   get 'backoffice/addurl' => 'backoffice#addurl'
+  get 'backoffice/retour' => 'backoffice#retour'
+  get 'backoffice/seeretour' => 'backoffice#seeretour'
+  get 'backoffice/client' => 'backoffice#client'
+  get 'backoffice/seeclient' => 'backoffice#seeclient'
+  get 'backoffice/addclient' => 'backoffice#addclient'
   
   
   namespace :admin do
