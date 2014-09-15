@@ -1,7 +1,7 @@
 h2 Adresse de facturation
 form
-  	input name="facturation" type="radio" value="adresselivraison-1" 
-	    .adresseuser 
-			span Monsieur Jérémy Pairis
-			span 152 rue de Général de Gaulle
-			span 21110 Tart-le-Bas
+  	input name="facturation" type="radio" value="adresselivraison-1"
+	    .adresseuser
+			span #{current_user.gender} #{current_user.firstname} #{current_user.name}
+			span #{current_user.address} #{current_user.address2}
+			span #{current_user.zipcode} #{current_user.city}
