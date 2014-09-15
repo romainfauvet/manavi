@@ -42,6 +42,7 @@ Manavi::Application.routes.draw do
     resource :dashboard, only: :index
     resources :actus, only: [:index, :new, :create, :destroy]
     resources :categories, only: [:index, :new, :create, :destroy]
+    resources :products
   end
 
   # Example of regular route:

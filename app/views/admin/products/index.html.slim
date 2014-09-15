@@ -1,0 +1,28 @@
+h1 Produits
+
+= link_to 'Nouveau produit', new_admin_product_path
+
+table
+  thead
+    tr
+      td Sku
+      td reference
+      td Titre
+      td Description
+      td Prix
+      td Categorie
+      td
+
+  tbody
+    - @products.each do |product|
+      tr
+        td= product.sku
+        td= product.reference
+        td= product.title
+        td= product.description
+        td= product.price
+        td= product.category_name
+        td
+          =' link_to 'Editer', edit_admin_product_path(product)
+          ='
+          =' link_to 'Supprimer', admin_product_path(product), method: :delete

@@ -1,0 +1,10 @@
+= simple_form_for ['admin', product] do |form|
+  = form.input :sku
+  = form.input :reference
+  = form.input :title
+  = form.input :description
+  = form.input :price
+
+  = form.input :category_id, collection: Category.all
+  / = form.input :producer, collection: Producer.all
+  = form.submit(class: 'button')
