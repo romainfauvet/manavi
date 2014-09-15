@@ -5,128 +5,29 @@
 
 	#cbp-vm.cbp-vm-switcher.cbp-vm-view-grid
 		ul.list.large-block-grid-6.medium-block-grid-3.small-block-grid-2
-			li
-				.product
-					= link_to "/product/pageproduct" do
-					    .image_prix
-				      		= image_tag "product/produit-3.jpg"
-							.prix
-								span 2,60 €
-								.clear
-						.desc
-							p Ciment super
-							span Blanc
-						.producteur
-							p Producteur :
-							span.nom
-								'Calcia
-						.label
-				      	.button.accessproduct
-							span Voir le produit
-						.clear
-			
-			li
-				.product
-					a href="#"
-					    .image_prix
-				      		= image_tag "product/filtre_a_evier.jpg"
-							.prix
-								span 37 €
-								.clear
-						.desc
-							p Filtre à évier
-							span hydropure XM
-						.producteur
-							p Producteur :
-							span.nom
-								'Brico-Travo
-						.label
-				      	.button.accessproduct
-							span Voir le produit
-						.clear
+			- @products.each do |product|
+				li
+					.product
+						= link_to "/product/pageproduct" do
+						    .image_prix
+					      		= image_tag "product/produit-#{product.id}.jpg"
+								.prix
+									span= number_to_currency(product.price, unit: "€", format: "%n %u")
+									.clear
+							.desc
+								p= product.title
+								span= product.description
+							.producteur
+								p Producteur :
+								span.nom
+									'Calcia
+							.label
+					      	.button.accessproduct
+								span Voir le produit
+							.clear
 
-
-			li
-				.product
-					= link_to "#" do
-					    .image_prix
-				      		= image_tag "product/hamac.jpg"
-							.prix
-								span 119 €
-								.clear
-						.desc
-							p Hamac double
-							span 100% coton
-						.producteur
-							p Producteur :
-							span.nom
-								'Amazonas
-						.label
-							= image_tag "label-limite.png"
-				      	.button.accessproduct
-							span Voir le produit
-						.clear			
-
-			li
-				.product
-					= link_to "#" do
-					    .image_prix
-				      		= image_tag "product/Lait-nettoyant-doux.jpg"
-							.prix
-								span 8,45 €
-								.clear
-						.desc
-							p Lait nettoyant 
-							span Doux Lavera - 125mL 
-						.producteur
-							p Producteur :
-							span.nom
-								'Amazonas
-						.label
-				      	.button.accessproduct
-							span Voir le produit
-						.clear
-			li
-				.product
-					= link_to "#" do
-					    .image_prix
-				      		= image_tag "product/oreiller.jpg"
-							.prix
-								span 96,75 €
-								.clear
-						.desc
-							p Oreiller
-							span Plume royal 
-						.producteur
-							p Producteur :
-							span.nom
-								'Brico-Travo
-						.label
-				      	.button.accessproduct
-							span Voir le produit
-						.clear
-			li
-				.product
-					= link_to "#" do
-					    .image_prix
-				      		= image_tag "product/panneau-solaire.jpg"
-							.prix
-								span 375,34 €
-								.clear
-						.desc
-							p Panneau solaire
-							span 100W
-						.producteur
-							p Producteur :
-							span.nom
-								'Brico-Travo
-						.label
-				      	.button.accessproduct
-							span Voir le produit
-						.clear
-	
 	.columns.right
 		.allselection
 			a href="/listproduct/listproduct"
-	
+
 				'Découvrir tous les produits
